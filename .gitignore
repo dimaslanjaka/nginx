@@ -1,6 +1,8 @@
 .gradle
-/build/
-!/build/outputs
+build/*
+!build/libs
+!build/artifactory
+!build/outputs
 # Ignore Gradle GUI config
 gradle-app.setting
 

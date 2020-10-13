@@ -32,9 +32,9 @@ buildscript {
         classpath "org.shipkit:shipkit:2.3.5"
         classpath "commons-net:commons-net:3.3"
         classpath "com.bmuschko:gradle-nexus-plugin:2.3.1"
-        classpath "io.codearte.gradle.nexus:gradle-nexus-staging-plugin:0.5.3"
+        classpath "io.codearte.gradle.nexus:gradle-nexus-staging-plugin:0.11.0"
         classpath "com.google.code.gson:gson:2.8.6"
-        classpath "net.sf.proguard:proguard-gradle:5.2.1"
+        classpath "net.sf.proguard:proguard-gradle:6.0.3"
         classpath "com.dimaslanjaka:gradle-plugin:latest.release"
         classpath "androidx.benchmark:benchmark-gradle-plugin:1.0.0"
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:${kotlin_version}"
@@ -93,6 +93,7 @@ android {
         // class as a functional test. The default value is "false"
         testFunctionalTest true
         consumerProguardFiles "consumer-rules.pro"
+        multiDexEnabled true
     }
     // Encapsulates options for running tests.
     testOptions {
@@ -132,27 +133,39 @@ android {
             proguardFiles getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro"
         }
     }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
 }
 
 dependencies {
-    implementation "com.dimaslanjaka:gradle-plugin:latest.release"
-    implementation fileTree(dir: "libs", include: ["*.jar"])
+    implementation "log4j:log4j:1.2.17"
+    /*
+    implementation group: "org.apache.logging.log4j", name: "log4j-api", version: "2.13.3"
+    implementation "org.slf4j:slf4j-api:1.7.25"
+    implementation "com.github.tony19:logback-android:1.1.1-12"
+    annotationProcessor group: "org.apache.logging.log4j", name: "log4j-core", version: "2.13.3"
+    annotationProcessor "com.google.auto.value:auto-value:1.5.2"
+     */
+    implementation group: "com.fasterxml.jackson.core", name: "jackson-databind", version: "2.12.0-rc1"
+
+    //implementation fileTree(dir: "libs", include: ["*.jar"])
     implementation "androidx.appcompat:appcompat:1.2.0"
 
     // Required for local unit tests (JUnit 4 framework)
-    testImplementation "junit:junit:4.13"
+    testImplementation "junit:junit:4.13.1"
 
     // Required for instrumented tests
-    androidTestImplementation "com.android.support:support-annotations:28.0.0"
-    androidTestImplementation "com.android.support.test:runner:1.0.2"
+    androidTestImplementation "androidx.annotation:annotation:1.1.0"
     androidTestImplementation "androidx.test.ext:junit:1.1.2"
     androidTestImplementation "androidx.test.espresso:espresso-core:3.3.0"
 
     testImplementation "org.robolectric:robolectric:4.4"
-    annotationProcessor "com.google.auto.value:auto-value:1.5.2"
 }
 
-sourceCompatibility = 1.8
+sourceCompatibility = JavaVersion.VERSION_1_8
+targetCompatibility = JavaVersion.VERSION_1_8
 
 // Because the components are created only during the afterEvaluate phase, you must
 // configure your publications using the afterEvaluate() lifecycle method.
