@@ -1,6 +1,0 @@
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools"
-          package="com.dimaslanjaka.webview">
-    <uses-sdk
-            tools:overrideLibrary="com.github.kittinunf.fuel.android, com.android.graphics, com.github.kittinunf.fuel.stetho"/>
-    <uses-permission android:name="android.permission.INTERNET"/>
-</manifest>
