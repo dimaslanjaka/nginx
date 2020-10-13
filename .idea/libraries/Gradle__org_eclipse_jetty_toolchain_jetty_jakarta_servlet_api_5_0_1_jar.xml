@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: org.eclipse.jetty.toolchain:jetty-jakarta-servlet-api:5.0.1@jar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty.toolchain/jetty-jakarta-servlet-api/5.0.1/2c96ef9b4b93e4a1cfb0afa0e5a7515100b2ad77/jetty-jakarta-servlet-api-5.0.1.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty.toolchain/jetty-jakarta-servlet-api/5.0.1/aa5c4107e855b6ced4d80084d1ecfed9470cf47a/jetty-jakarta-servlet-api-5.0.1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty.toolchain/jetty-jakarta-servlet-api/5.0.1/e81fb283ef51c4e3a229e3772cdf92b31b0311f8/jetty-jakarta-servlet-api-5.0.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

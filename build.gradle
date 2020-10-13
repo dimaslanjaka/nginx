@@ -1,0 +1,183 @@
+buildscript {
+    repositories {
+        jcenter()
+        google()
+        mavenCentral()
+        mavenLocal()
+        gradlePluginPortal()
+        maven { url "https://maven.google.com" }
+        maven { url "https://maven.mozilla.org/maven2/" }
+        maven { url "https://jitpack.io" }
+        maven { url "https://plugins.gradle.org/m2/" }
+        maven { url "http://maven.springframework.org/release" }
+        maven { url "http://maven.restlet.org" }
+        maven { url "https://repo.spring.io/snapshot" }
+        maven { url "https://repo.spring.io/milestone" }
+        maven { url "https://repo.gradle.org/gradle/libs-releases" }
+        maven { url = "https://oss.sonatype.org/content/repositories/snapshots" }
+        maven {
+            url "https://maven.pkg.github.com/dimaslanjaka/gradle-plugin"
+            credentials {
+                username = "dimaslanjaka"
+                password = "d98acb59134fabab05145ddeb7abe4441db18b4a"
+            }
+        }
+        maven { url "https://repo1.maven.org/maven2" }
+    }
+    dependencies {
+        classpath "com.gradle.publish:plugin-publish-plugin:0.12.0"
+        classpath "org.springframework.boot:spring-boot-gradle-plugin:2.3.4.RELEASE"
+        classpath "io.spring.gradle:dependency-management-plugin:1.0.10.RELEASE"
+        classpath "com.android.tools.build:gradle:${gradle_version}"
+        classpath "org.shipkit:shipkit:2.3.5"
+        classpath "commons-net:commons-net:3.3"
+        classpath "com.bmuschko:gradle-nexus-plugin:2.3.1"
+        classpath "io.codearte.gradle.nexus:gradle-nexus-staging-plugin:0.5.3"
+        classpath "com.google.code.gson:gson:2.8.6"
+        classpath "net.sf.proguard:proguard-gradle:5.2.1"
+        classpath "com.dimaslanjaka:gradle-plugin:latest.release"
+        classpath "androidx.benchmark:benchmark-gradle-plugin:1.0.0"
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:${kotlin_version}"
+    }
+}
+repositories {
+    jcenter()
+    google()
+    mavenCentral()
+    mavenLocal()
+    gradlePluginPortal()
+    maven { url "https://maven.google.com" }
+    maven { url "https://maven.mozilla.org/maven2/" }
+    maven { url "https://jitpack.io" }
+    maven { url "https://plugins.gradle.org/m2/" }
+    maven { url "http://maven.springframework.org/release" }
+    maven { url "http://maven.restlet.org" }
+    maven { url "https://repo.spring.io/snapshot" }
+    maven { url "https://repo.spring.io/milestone" }
+    maven { url "https://repo.gradle.org/gradle/libs-releases" }
+    maven { url = "https://oss.sonatype.org/content/repositories/snapshots" }
+    maven {
+        url "https://maven.pkg.github.com/dimaslanjaka/gradle-plugin"
+        credentials {
+            username = "dimaslanjaka"
+            password = "d98acb59134fabab05145ddeb7abe4441db18b4a"
+        }
+    }
+    maven { url "https://repo1.maven.org/maven2" }
+}
+apply plugin: "com.android.library"
+apply plugin: "com.dimaslanjaka.gradle-plugin"
+apply plugin: "maven-publish"
+
+version = "1.0.0"
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion "30.0.2"
+
+    defaultConfig {
+        minSdkVersion 14
+        targetSdkVersion 30
+        versionCode 1
+        versionName project.version.toString()
+
+        // Specifies the application ID for the test APK.
+        testApplicationId "com.dimaslanjaka.webview.test"
+        // Specifies the fully-qualified class name of the test instrumentation runner.
+        testInstrumentationRunner "android.test.InstrumentationTestRunner"
+        // If set to "true", enables the instrumentation class to start and stop profiling.
+        // If set to false (default), profiling occurs the entire time the instrumentation
+        // class is running.
+        testHandleProfiling true
+        // If set to "true", indicates that the Android system should run the instrumentation
+        // class as a functional test. The default value is "false"
+        testFunctionalTest true
+        consumerProguardFiles "consumer-rules.pro"
+    }
+    // Encapsulates options for running tests.
+    testOptions {
+        // Changes the directory where Gradle saves test reports. By default, Gradle saves test reports
+        // in the path_to_your_project/module_name/build/outputs/reports/ directory.
+        // "$rootDir" sets the path relative to the root directory of the current project.
+        reportDir "$rootDir/test-reports"
+        // Changes the directory where Gradle saves test results. By default, Gradle saves test results
+        // in the path_to_your_project/module_name/build/outputs/test-results/ directory.
+        // "$rootDir" sets the path relative to the root directory of the current project.
+        resultsDir "$rootDir/test-results"
+        unitTests {
+            // By default, local unit tests throw an exception any time the code you are testing tries to access
+            // Android platform APIs (unless you mock Android dependencies yourself or with a testing
+            // framework like Mockito). However, you can enable the following property so that the test
+            // returns either null or zero when accessing platform APIs, rather than throwing an exception.
+            returnDefaultValues true
+
+            includeAndroidResources = true
+
+            // Encapsulates options for controlling how Gradle executes local unit tests. For a list
+            // of all the options you can specify, read Gradle"s reference documentation.
+            all {
+                // Sets JVM argument(s) for the test JVM(s).
+                jvmArgs "-XX:MaxPermSize=256m"
+
+                // You can also check the task name to apply options to only the tests you specify.
+                if (it.name == "testDebugUnitTest") {
+                    systemProperty "debug", "true"
+                }
+            }
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro"
+        }
+    }
+}
+
+dependencies {
+    implementation "com.dimaslanjaka:gradle-plugin:latest.release"
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+    implementation "androidx.appcompat:appcompat:1.2.0"
+
+    // Required for local unit tests (JUnit 4 framework)
+    testImplementation "junit:junit:4.13"
+
+    // Required for instrumented tests
+    androidTestImplementation "com.android.support:support-annotations:28.0.0"
+    androidTestImplementation "com.android.support.test:runner:1.0.2"
+    androidTestImplementation "androidx.test.ext:junit:1.1.2"
+    androidTestImplementation "androidx.test.espresso:espresso-core:3.3.0"
+
+    testImplementation "org.robolectric:robolectric:4.4"
+    annotationProcessor "com.google.auto.value:auto-value:1.5.2"
+}
+
+sourceCompatibility = 1.8
+
+// Because the components are created only during the afterEvaluate phase, you must
+// configure your publications using the afterEvaluate() lifecycle method.
+afterEvaluate {
+    publishing {
+        publications {
+            // Creates a Maven publication called "release".
+            release(MavenPublication) {
+                // Applies the component for the release build variant.
+                from components.release
+
+                // You can then customize attributes of the publication as shown below.
+                groupId = "com.dimaslanjaka"
+                artifactId = "webview"
+                version = getVersion().toString()
+            }
+            // Creates a Maven publication called “debug”.
+            debug(MavenPublication) {
+                // Applies the component for the debug build variant.
+                from components.debug
+
+                groupId = "com.dimaslanjaka"
+                artifactId = "webview-debug"
+                version = getVersion().toString()
+            }
+        }
+    }
+}

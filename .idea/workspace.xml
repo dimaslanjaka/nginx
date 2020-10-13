@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AndroidLayouts">
+    <shared>
+      <config />
+    </shared>
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="29ddd271-ad32-4001-b3a6-81216350014e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="e501d60e9804" />
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="webview" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="webview" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="webview" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="publishing" type="c8890929:TasksNode$1" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="layoutResourceFile_vertical" />
+        <option value="valueResourceFile" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Dimas Lanjaka &lt;dimaslanjaka@gmail.com&gt;" />
+      </list>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="D:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2020.2.3\plugins\maven\lib\maven3" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1inZfIUuHcJkbDGZsDVafrLN6dG" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_MARK_IGNORED_FILES_AS_EXCLUDED" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="show.unlinked.gradle.project.popup" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.dimaslanjaka.webview" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Android Instrumented Tests.ExampleInstrumentedT...">
+    <configuration name="ExampleInstrumentedT..." type="AndroidTestRunConfigurationType" factoryName="Android Instrumented Tests" temporary="true" nameIsGenerated="true">
+      <module name="webview" />
+      <option name="TESTING_TYPE" value="2" />
+      <option name="METHOD_NAME" value="" />
+      <option name="CLASS_NAME" value="com.dimaslanjaka.webview.ExampleInstrumentedTest" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
+      <option name="EXTRA_OPTIONS" value="" />
+      <option name="INCLUDE_GRADLE_EXTRA_OPTIONS" value="true" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
+      <option name="DEBUGGER_TYPE" value="Java" />
+      <Java />
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Sample Java Methods" />
+      </Profilers>
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyActivityTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;com.dimaslanjaka.webview.MyActivityTest&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="cleanTestDebugUnitTest" />
+            <option value="testDebugUnitTest" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="webview [publishToMavenLocal]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="publishToMavenLocal" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Android Instrumented Tests.ExampleInstrumentedT..." />
+        <item itemvalue="Gradle.MyActivityTest" />
+        <item itemvalue="Gradle.webview [publishToMavenLocal]" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="29ddd271-ad32-4001-b3a6-81216350014e" name="Default Changelist" comment="" />
+      <created>1602545419781</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1602545419781</updated>
+    </task>
+    <task id="LOCAL-00001" summary="First Deploy">
+      <created>1602551945455</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1602551945455</updated>
+    </task>
+    <task id="LOCAL-00002" summary="First Deploy">
+      <created>1602552171382</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1602552171382</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="UpdateCopyrightCheckinHandler">
+    <option name="UPDATE_COPYRIGHT" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="CHECK_NEW_TODO" value="false" />
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="First Deploy" />
+    <option name="LAST_COMMIT_MESSAGE" value="First Deploy" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="372" y="162" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1602552085847">
+      <screen x="0" y="0" width="1218" height="720" />
+    </state>
+    <state x="372" y="162" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1218.720@0.0.1218.720" timestamp="1602552085847" />
+    <state x="414" y="76" key="#com.intellij.ide.util.MemberChooser" timestamp="1602550116892">
+      <screen x="0" y="0" width="1218" height="720" />
+    </state>
+    <state x="414" y="76" key="#com.intellij.ide.util.MemberChooser/0.0.1218.720@0.0.1218.720" timestamp="1602550116892" />
+    <state x="392" y="229" width="433" height="268" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1602549950792">
+      <screen x="0" y="0" width="1218" height="720" />
+    </state>
+    <state x="392" y="229" width="433" height="268" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1218.720@0.0.1218.720" timestamp="1602549950792" />
+    <state x="189" y="115" key="AndroidCreateResourceDirectoryDialog" timestamp="1602550155080">
+      <screen x="0" y="0" width="1218" height="720" />
+    </state>
+    <state x="189" y="115" key="AndroidCreateResourceDirectoryDialog/0.0.1218.720@0.0.1218.720" timestamp="1602550155080" />
+    <state x="189" y="115" key="AndroidCreateResourceFileDialog" timestamp="1602550166865">
+      <screen x="0" y="0" width="1218" height="720" />
+    </state>
+    <state x="189" y="115" key="AndroidCreateResourceFileDialog/0.0.1218.720@0.0.1218.720" timestamp="1602550166865" />
+    <state x="467" y="150" key="AndroidCreateXmlResourceDialog" timestamp="1602550287737">
+      <screen x="0" y="0" width="1218" height="720" />
+    </state>
+    <state x="467" y="150" key="AndroidCreateXmlResourceDialog/0.0.1218.720@0.0.1218.720" timestamp="1602550287737" />
+    <state x="234" y="0" key="CommitChangelistDialog2" timestamp="1602552169749">
+      <screen x="0" y="0" width="1218" height="720" />
+    </state>
+    <state x="234" y="0" key="CommitChangelistDialog2/0.0.1218.720@0.0.1218.720" timestamp="1602552169749" />
+    <state width="1175" height="176" key="GridCell.Tab.0.bottom" timestamp="1602551428194">
+      <screen x="0" y="0" width="1218" height="720" />
+    </state>
+    <state width="1175" height="176" key="GridCell.Tab.0.bottom/0.0.1218.720@0.0.1218.720" timestamp="1602551428194" />
+    <state width="1175" height="176" key="GridCell.Tab.0.center" timestamp="1602551428193">
+      <screen x="0" y="0" width="1218" height="720" />
+    </state>
+    <state width="1175" height="176" key="GridCell.Tab.0.center/0.0.1218.720@0.0.1218.720" timestamp="1602551428193" />
+    <state width="1175" height="176" key="GridCell.Tab.0.left" timestamp="1602551428193">
+      <screen x="0" y="0" width="1218" height="720" />
+    </state>
+    <state width="1175" height="176" key="GridCell.Tab.0.left/0.0.1218.720@0.0.1218.720" timestamp="1602551428193" />
+    <state width="1175" height="176" key="GridCell.Tab.0.right" timestamp="1602551428193">
+      <screen x="0" y="0" width="1218" height="720" />
+    </state>
+    <state width="1175" height="176" key="GridCell.Tab.0.right/0.0.1218.720@0.0.1218.720" timestamp="1602551428193" />
+    <state x="189" y="103" key="IDE.errors.dialog" timestamp="1602548183662">
+      <screen x="0" y="0" width="1218" height="720" />
+    </state>
+    <state x="189" y="103" key="IDE.errors.dialog/0.0.1218.720@0.0.1218.720" timestamp="1602548183662" />
+    <state x="89" y="0" key="SettingsEditor" timestamp="1602547159270">
+      <screen x="0" y="0" width="1218" height="720" />
+    </state>
+    <state x="89" y="0" key="SettingsEditor/0.0.1218.720@0.0.1218.720" timestamp="1602547159270" />
+    <state x="201" y="93" key="Vcs.Push.Dialog.v2" timestamp="1602551952341">
+      <screen x="0" y="0" width="1218" height="720" />
+    </state>
+    <state x="201" y="93" key="Vcs.Push.Dialog.v2/0.0.1218.720@0.0.1218.720" timestamp="1602551952341" />
+    <state x="272" y="41" width="672" height="678" key="search.everywhere.popup" timestamp="1602549334254">
+      <screen x="0" y="0" width="1218" height="720" />
+    </state>
+    <state x="272" y="41" width="672" height="678" key="search.everywhere.popup/0.0.1218.720@0.0.1218.720" timestamp="1602549334254" />
+  </component>
+</project>

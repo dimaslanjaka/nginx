@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Gradle: com.dimaslanjaka:gradle-plugin:0.6.23@jar">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/dimaslanjaka/gradle-plugin/0.6.23/gradle-plugin-0.6.23.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

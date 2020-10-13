@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <Button
+            android:text="@string/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/press_me_button"/>
+    <TextView
+            android:text="@string/testing_android_rocks"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/results_text_view"/>
+    <com.dimaslanjaka.webview.WebView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+</LinearLayout>

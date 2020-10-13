@@ -1,0 +1,27 @@
+package com.dimaslanjaka.webview;
+
+import android.app.Activity;
+import android.widget.Button;
+import android.widget.TextView;
+import androidx.test.ext.junit.runners.AndroidJUnit4;
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.robolectric.Robolectric;
+
+import static org.hamcrest.CoreMatchers.equalTo;
+import static org.junit.Assert.assertThat;
+
+@RunWith(AndroidJUnit4.class)
+public class MyActivityTest {
+
+	@Test
+	public void clickingButton_shouldChangeResultsViewText() throws Exception {
+		Activity activity = Robolectric.setupActivity(MainActivity.class);
+
+		Button button = (Button) activity.findViewById(R.id.press_me_button);
+		TextView results = (TextView) activity.findViewById(R.id.results_text_view);
+
+		button.performClick();
+		assertThat(results.getText().toString(), equalTo("Testing Android Rocks!"));
+	}
+}

@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: org.mortbay.jetty.npn:npn-boot:8.1.2.v20120308@jar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.mortbay.jetty.npn/npn-boot/8.1.2.v20120308/935cdc5b951477aa00f3211921d00f3b6b81bb83/npn-boot-8.1.2.v20120308.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.mortbay.jetty.npn/npn-boot/8.1.2.v20120308/7245b15621b9984f76c217fc4b6225fda83708b6/npn-boot-8.1.2.v20120308-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.mortbay.jetty.npn/npn-boot/8.1.2.v20120308/37f4e6be0855557452487ace3aac55f46b25487c/npn-boot-8.1.2.v20120308-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
