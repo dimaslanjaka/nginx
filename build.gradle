@@ -1,99 +1,53 @@
+/**
+ * Copyright (c) 2014-present, Facebook, Inc. All rights reserved.
+ *
+ * You are hereby granted a non-exclusive, worldwide, royalty-free license to use,
+ * copy, modify, and distribute this software in source code or binary form for use
+ * in connection with the web services and APIs provided by Facebook.
+ *
+ * As with any software that integrates with the Facebook platform, your use of
+ * this software is subject to the Facebook Developer Principles and Policies
+ * [http://developers.facebook.com/policy/]. This copyright notice shall be
+ * included in all copies or substantial portions of the software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
+ * FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
+ * COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
+ * IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+ * CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+ */
+
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
 buildscript {
-    ext.kotlin_version = '1.4.10'
+    project.apply from: "${rootDir}/constants.gradle"
+
     repositories {
-        jcenter()
-        google()
         mavenCentral()
+        google()
+        jcenter()
         mavenLocal()
-        gradlePluginPortal()
-        maven { url "https://maven.google.com" }
-        maven { url "https://maven.mozilla.org/maven2/" }
-        maven { url "https://jitpack.io" }
-        maven { url "https://plugins.gradle.org/m2/" }
-        maven { url "http://maven.springframework.org/release" }
-        maven { url "http://maven.restlet.org" }
-        maven { url "https://repo.spring.io/snapshot" }
-        maven { url "https://repo.spring.io/milestone" }
-        maven { url "https://repo.gradle.org/gradle/libs-releases" }
-        maven { url = "https://oss.sonatype.org/content/repositories/snapshots" }
-        maven {
-            url "https://maven.pkg.github.com/dimaslanjaka/gradle-plugin"
-            credentials {
-                username = "dimaslanjaka"
-                password = "d98acb59134fabab05145ddeb7abe4441db18b4a"
-            }
-        }
-        maven { url "https://repo1.maven.org/maven2" }
     }
     dependencies {
-        classpath "com.gradle.publish:plugin-publish-plugin:0.12.0"
-        classpath "org.springframework.boot:spring-boot-gradle-plugin:2.3.4.RELEASE"
-        classpath "io.spring.gradle:dependency-management-plugin:1.0.10.RELEASE"
-        classpath "com.android.tools.build:gradle:${gradle_version}"
-        classpath "org.shipkit:shipkit:2.3.5"
-        classpath "commons-net:commons-net:3.3"
-        classpath "com.bmuschko:gradle-nexus-plugin:2.3.1"
-        classpath "io.codearte.gradle.nexus:gradle-nexus-staging-plugin:0.11.0"
-        classpath "com.google.code.gson:gson:2.8.6"
-        classpath "net.sf.proguard:proguard-gradle:6.0.3"
+        classpath 'com.android.tools.build:gradle:4.0.2'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:${project.ext.kotlinVersion}"
         classpath "com.dimaslanjaka:gradle-plugin:latest.release"
-        classpath "androidx.benchmark:benchmark-gradle-plugin:1.0.0"
-        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
-    }
-}
-repositories {
-    jcenter()
-    google()
-    mavenCentral()
-    mavenLocal()
-    gradlePluginPortal()
-    maven { url "https://maven.google.com" }
-    maven { url "https://maven.mozilla.org/maven2/" }
-    maven { url "https://jitpack.io" }
-    maven { url "https://plugins.gradle.org/m2/" }
-    maven { url "http://maven.springframework.org/release" }
-    maven { url "http://maven.restlet.org" }
-    maven { url "https://repo.spring.io/snapshot" }
-    maven { url "https://repo.spring.io/milestone" }
-    maven { url "https://repo.gradle.org/gradle/libs-releases" }
-    maven { url = "https://oss.sonatype.org/content/repositories/snapshots" }
-    maven {
-        url "https://maven.pkg.github.com/dimaslanjaka/gradle-plugin"
-        credentials {
-            username = "dimaslanjaka"
-            password = "d98acb59134fabab05145ddeb7abe4441db18b4a"
-        }
-    }
-    maven { url "https://repo1.maven.org/maven2" }
-}
-allprojects {
-    repositories {
-        jcenter()
-        google()
-        mavenCentral()
-        mavenLocal()
-        gradlePluginPortal()
-        maven { url "https://maven.google.com" }
-        maven { url "https://maven.mozilla.org/maven2/" }
-        maven { url "https://jitpack.io" }
-        maven { url "https://plugins.gradle.org/m2/" }
-        maven { url "http://maven.springframework.org/release" }
-        maven { url "http://maven.restlet.org" }
-        maven { url "https://repo.spring.io/snapshot" }
-        maven { url "https://repo.spring.io/milestone" }
-        maven { url "https://repo.gradle.org/gradle/libs-releases" }
-        maven { url = "https://oss.sonatype.org/content/repositories/snapshots" }
-        maven {
-            url "https://maven.pkg.github.com/dimaslanjaka/gradle-plugin"
-            credentials {
-                username = "dimaslanjaka"
-                password = "d98acb59134fabab05145ddeb7abe4441db18b4a"
-            }
-        }
-        maven { url "https://repo1.maven.org/maven2" }
+        classpath 'com.jfrog.bintray.gradle:gradle-bintray-plugin:1.8.4'
+        classpath 'com.github.dcendents:android-maven-gradle-plugin:2.1'
     }
 }
 
-task clean(type: Delete) {
-    delete rootProject.buildDir
+allprojects {
+    repositories {
+        mavenCentral()
+        google()
+        mavenLocal()
+        jcenter()
+        maven { url 'https://jitpack.io' }
+    }
+
+    project.apply from: "${rootDir}/constants.gradle"
 }
+
+apply plugin: "com.dimaslanjaka.gradle-plugin"

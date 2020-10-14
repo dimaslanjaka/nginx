@@ -6,121 +6,993 @@
     </shared>
   </component>
   <component name="AutoImportSettings">
-    <option name="autoReloadType" value="SELECTIVE" />
+    <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="729a46be-51d2-4c33-90ed-010d4703635a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webview/src/main/java/com/dimaslanjaka/components/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webview/src/main/java/com/dimaslanjaka/components/log/Log.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webview/src/main/java/com/dimaslanjaka/components/webview/CookieParser.kt" afterDir="false" />
+    <list default="true" id="1be43bc2-4a5d-45d6-a452-30755b7b23e9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.github/ISSUE_TEMPLATE/bug_report.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.github/ISSUE_TEMPLATE/feature_request.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.github/PULL_REQUEST_TEMPLATE.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.github/stale.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.travis.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.travis/release.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CHANGELOG.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CODE_OF_CONDUCT.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CONTRIBUTING.mdown" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LICENSE.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NOTICE.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.mdown" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SECURITY.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bot/ObservableCollections" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bot/webview-app/src/main/java/com/dimaslanjaka/webview/BrowserFragment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bot/webview-app/src/main/java/com/dimaslanjaka/webview/TabsAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bot/webview-app/src/main/res/layout/homelayout.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bot/webview-app/src/main/res/layout/switcher_activity.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bot/webview-app/src/main/res/layout/tab_activity.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bot/webview-app/src/main/res/values/style.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bot/webview/src/main/java/com/dimaslanjaka/components/json/CryptLib.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bot/webview/src/main/java/com/dimaslanjaka/components/kotlin/utils/ObservableList.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bot/webview/src/main/java/com/dimaslanjaka/components/okhttp/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bot/webview/src/main/java/com/dimaslanjaka/components/okhttp/WebkitCookieManagerProxy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bot/webview/src/main/java/java/net/BlacklistCookiePolicy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bot/webview/src/main/java/java/net/PersistentCookieStore.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bot/webview/src/main/java/java/net/SessionCookieManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bot/webview/src/main/java/java/net/ThreadLocalCookieStore.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build.gradle.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/constants.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-applinks/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-applinks/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-applinks/proguard-rules.pro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-applinks/src/main/AndroidManifest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-applinks/src/main/java/com/facebook/applinks/AppLinkData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-applinks/src/main/java/com/facebook/applinks/AppLinks.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-applinks/src/main/java/com/facebook/applinks/FacebookAppLinkResolver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-common/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-common/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-common/proguard-rules.pro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-common/src/main/AndroidManifest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-common/src/main/java/com/facebook/AccessTokenTracker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-common/src/main/java/com/facebook/CustomTabActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-common/src/main/java/com/facebook/CustomTabMainActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-common/src/main/java/com/facebook/FacebookActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-common/src/main/java/com/facebook/FacebookAuthorizationException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-common/src/main/java/com/facebook/FacebookButtonBase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-common/src/main/java/com/facebook/FacebookCallback.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-common/src/main/java/com/facebook/FacebookDialog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-common/src/main/java/com/facebook/FacebookDialogException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-common/src/main/java/com/facebook/LoginStatusCallback.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-common/src/main/java/com/facebook/ShareGraphRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-common/src/main/java/com/facebook/WebDialog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-common/src/main/java/com/facebook/common/Common.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-common/src/main/java/com/facebook/devicerequests/internal/DeviceRequestsHelper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-common/src/main/java/com/facebook/internal/AppCall.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-common/src/main/java/com/facebook/internal/CustomTab.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-common/src/main/java/com/facebook/internal/CustomTabUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-common/src/main/java/com/facebook/internal/DialogFeature.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-common/src/main/java/com/facebook/internal/DialogPresenter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-common/src/main/java/com/facebook/internal/FacebookDialogBase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-common/src/main/java/com/facebook/internal/FacebookDialogFragment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-common/src/main/java/com/facebook/internal/FacebookWebFallbackDialog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-common/src/main/java/com/facebook/internal/FragmentWrapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-common/src/main/java/com/facebook/internal/PlatformServiceClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-common/src/main/java/com/facebook/internal/WebDialog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-common/src/main/java/com/facebook/login/CustomTabLoginMethodHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-common/src/main/java/com/facebook/login/CustomTabPrefetchHelper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-common/src/main/java/com/facebook/login/DeviceAuthDialog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-common/src/main/java/com/facebook/login/DeviceAuthMethodHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-common/src/main/java/com/facebook/login/FacebookLiteLoginMethodHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-common/src/main/java/com/facebook/login/GetTokenClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-common/src/main/java/com/facebook/login/GetTokenLoginMethodHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-common/src/main/java/com/facebook/login/KatanaProxyLoginMethodHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-common/src/main/java/com/facebook/login/LoginBehavior.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-common/src/main/java/com/facebook/login/LoginClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-common/src/main/java/com/facebook/login/LoginFragment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-common/src/main/java/com/facebook/login/LoginLogger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-common/src/main/java/com/facebook/login/LoginManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-common/src/main/java/com/facebook/login/LoginMethodHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-common/src/main/java/com/facebook/login/LoginResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-common/src/main/java/com/facebook/login/LoginStatusClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-common/src/main/java/com/facebook/login/NativeAppLoginMethodHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-common/src/main/java/com/facebook/login/StartActivityDelegate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-common/src/main/java/com/facebook/login/WebLoginMethodHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-common/src/main/java/com/facebook/login/WebViewLoginMethodHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-common/src/main/java/com/facebook/referrals/ReferralClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-common/src/main/java/com/facebook/referrals/ReferralFragment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-common/src/main/java/com/facebook/referrals/ReferralLogger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-common/src/main/java/com/facebook/referrals/ReferralManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-common/src/main/java/com/facebook/referrals/ReferralResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-common/src/main/java/com/facebook/referrals/StartActivityDelegate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-common/src/main/java/com/facebook/share/ShareBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-common/src/main/java/com/facebook/share/Sharer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-common/src/main/java/com/facebook/share/internal/CameraEffectFeature.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-common/src/main/java/com/facebook/share/internal/CameraEffectJSONUtility.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-common/src/main/java/com/facebook/share/internal/DeviceShareDialogFragment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-common/src/main/java/com/facebook/share/internal/LegacyNativeDialogParameters.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-common/src/main/java/com/facebook/share/internal/LikeActionController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-common/src/main/java/com/facebook/share/internal/LikeBoxCountView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-common/src/main/java/com/facebook/share/internal/LikeButton.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-common/src/main/java/com/facebook/share/internal/LikeContent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-common/src/main/java/com/facebook/share/internal/LikeDialog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-common/src/main/java/com/facebook/share/internal/LikeDialogFeature.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-common/src/main/java/com/facebook/share/internal/LikeStatusClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-common/src/main/java/com/facebook/share/internal/MessengerShareContentUtility.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-common/src/main/java/com/facebook/share/internal/NativeDialogParameters.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-common/src/main/java/com/facebook/share/internal/OpenGraphActionDialogFeature.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-common/src/main/java/com/facebook/share/internal/OpenGraphJSONUtility.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-common/src/main/java/com/facebook/share/internal/ResultProcessor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-common/src/main/java/com/facebook/share/internal/ShareConstants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-common/src/main/java/com/facebook/share/internal/ShareContentValidation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-common/src/main/java/com/facebook/share/internal/ShareDialogFeature.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-common/src/main/java/com/facebook/share/internal/ShareFeedContent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-common/src/main/java/com/facebook/share/internal/ShareInternalUtility.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-common/src/main/java/com/facebook/share/internal/ShareStoryFeature.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-common/src/main/java/com/facebook/share/internal/WebDialogParameters.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-common/src/main/java/com/facebook/share/model/AppGroupCreationContent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-common/src/main/java/com/facebook/share/model/CameraEffectArguments.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-common/src/main/java/com/facebook/share/model/CameraEffectTextures.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-common/src/main/java/com/facebook/share/model/GameRequestContent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-common/src/main/java/com/facebook/share/model/ShareCameraEffectContent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-common/src/main/java/com/facebook/share/model/ShareContent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-common/src/main/java/com/facebook/share/model/ShareHashtag.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-common/src/main/java/com/facebook/share/model/ShareLinkContent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-common/src/main/java/com/facebook/share/model/ShareMedia.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-common/src/main/java/com/facebook/share/model/ShareMediaContent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-common/src/main/java/com/facebook/share/model/ShareMessengerActionButton.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-common/src/main/java/com/facebook/share/model/ShareMessengerGenericTemplateContent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-common/src/main/java/com/facebook/share/model/ShareMessengerGenericTemplateElement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-common/src/main/java/com/facebook/share/model/ShareMessengerMediaTemplateContent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-common/src/main/java/com/facebook/share/model/ShareMessengerOpenGraphMusicTemplateContent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-common/src/main/java/com/facebook/share/model/ShareMessengerURLActionButton.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-common/src/main/java/com/facebook/share/model/ShareModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-common/src/main/java/com/facebook/share/model/ShareModelBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-common/src/main/java/com/facebook/share/model/ShareOpenGraphAction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-common/src/main/java/com/facebook/share/model/ShareOpenGraphContent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-common/src/main/java/com/facebook/share/model/ShareOpenGraphObject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-common/src/main/java/com/facebook/share/model/ShareOpenGraphValueContainer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-common/src/main/java/com/facebook/share/model/SharePhoto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-common/src/main/java/com/facebook/share/model/SharePhotoContent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-common/src/main/java/com/facebook/share/model/ShareStoryContent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-common/src/main/java/com/facebook/share/model/ShareVideo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-common/src/main/java/com/facebook/share/model/ShareVideoContent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-common/src/main/java/com/facebook/share/widget/LikeView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-common/src/main/java/com/facebook/share/widget/ShareDialog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-common/src/main/res/color/com_facebook_button_text_color.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-common/src/main/res/drawable-hdpi/com_facebook_button_like_icon_selected.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-common/src/main/res/drawable-hdpi/com_facebook_close.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-common/src/main/res/drawable-mdpi/com_facebook_button_like_icon_selected.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-common/src/main/res/drawable-mdpi/com_facebook_close.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-common/src/main/res/drawable-xhdpi/com_facebook_button_like_icon_selected.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-common/src/main/res/drawable-xhdpi/com_facebook_close.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-common/src/main/res/drawable-xxhdpi/com_facebook_button_like_icon_selected.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-common/src/main/res/drawable-xxhdpi/com_facebook_close.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-common/src/main/res/drawable/com_facebook_auth_dialog_background.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-common/src/main/res/drawable/com_facebook_auth_dialog_cancel_background.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-common/src/main/res/drawable/com_facebook_auth_dialog_header_background.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-common/src/main/res/drawable/com_facebook_button_background.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-common/src/main/res/drawable/com_facebook_button_icon.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-common/src/main/res/drawable/com_facebook_button_like_background.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-common/src/main/res/drawable/com_facebook_favicon_blue.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-common/src/main/res/layout/com_facebook_activity_layout.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-common/src/main/res/layout/com_facebook_device_auth_dialog_fragment.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-common/src/main/res/layout/com_facebook_login_fragment.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-common/src/main/res/layout/com_facebook_smart_device_dialog_fragment.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-common/src/main/res/values-af/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-common/src/main/res/values-ar/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-common/src/main/res/values-bn/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-common/src/main/res/values-cs/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-common/src/main/res/values-da/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-common/src/main/res/values-de/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-common/src/main/res/values-el/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-common/src/main/res/values-en-rGB/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-common/src/main/res/values-es-rES/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-common/src/main/res/values-es/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-common/src/main/res/values-fi/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-common/src/main/res/values-fr-rCA/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-common/src/main/res/values-fr/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-common/src/main/res/values-gu/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-common/src/main/res/values-hi/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-common/src/main/res/values-hr/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-common/src/main/res/values-hu/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-common/src/main/res/values-id/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-common/src/main/res/values-in/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-common/src/main/res/values-it/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-common/src/main/res/values-iw/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-common/src/main/res/values-ja/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-common/src/main/res/values-kn/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-common/src/main/res/values-ko/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-common/src/main/res/values-ml/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-common/src/main/res/values-mr/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-common/src/main/res/values-ms/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-common/src/main/res/values-nb/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-common/src/main/res/values-nl/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-common/src/main/res/values-pa/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-common/src/main/res/values-pl/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-common/src/main/res/values-pt-rPT/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-common/src/main/res/values-pt/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-common/src/main/res/values-ro/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-common/src/main/res/values-ru/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-common/src/main/res/values-sk/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-common/src/main/res/values-sv/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-common/src/main/res/values-ta/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-common/src/main/res/values-te/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-common/src/main/res/values-th/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-common/src/main/res/values-tl/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-common/src/main/res/values-tr/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-common/src/main/res/values-vi/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-common/src/main/res/values-zh-rCN/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-common/src/main/res/values-zh-rHK/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-common/src/main/res/values-zh-rTW/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-common/src/main/res/values/attrs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-common/src/main/res/values/dimens.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-common/src/main/res/values/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-common/src/main/res/values/styles.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-core/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-core/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-core/proguard-rules.pro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-core/src/main/AndroidManifest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-core/src/main/aidl/com/facebook/ppml/receiver/IReceiverService.aidl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-core/src/main/java/com/facebook/AccessToken.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-core/src/main/java/com/facebook/AccessTokenCache.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-core/src/main/java/com/facebook/AccessTokenManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-core/src/main/java/com/facebook/AccessTokenSource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-core/src/main/java/com/facebook/CallbackManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-core/src/main/java/com/facebook/CurrentAccessTokenExpirationBroadcastReceiver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-core/src/main/java/com/facebook/FacebookBroadcastReceiver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-core/src/main/java/com/facebook/FacebookContentProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-core/src/main/java/com/facebook/FacebookException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-core/src/main/java/com/facebook/FacebookGraphResponseException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-core/src/main/java/com/facebook/FacebookOperationCanceledException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-core/src/main/java/com/facebook/FacebookRequestError.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-core/src/main/java/com/facebook/FacebookSdk.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-core/src/main/java/com/facebook/FacebookSdkNotInitializedException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-core/src/main/java/com/facebook/FacebookSdkVersion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-core/src/main/java/com/facebook/FacebookServiceException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-core/src/main/java/com/facebook/GraphRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-core/src/main/java/com/facebook/GraphRequestAsyncTask.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-core/src/main/java/com/facebook/GraphRequestBatch.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-core/src/main/java/com/facebook/GraphResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-core/src/main/java/com/facebook/HttpMethod.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-core/src/main/java/com/facebook/LegacyTokenHelper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-core/src/main/java/com/facebook/LoggingBehavior.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-core/src/main/java/com/facebook/Profile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-core/src/main/java/com/facebook/ProfileCache.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-core/src/main/java/com/facebook/ProfileManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-core/src/main/java/com/facebook/ProfileTracker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-core/src/main/java/com/facebook/ProgressNoopOutputStream.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-core/src/main/java/com/facebook/ProgressOutputStream.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-core/src/main/java/com/facebook/RequestOutputStream.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-core/src/main/java/com/facebook/RequestProgress.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-core/src/main/java/com/facebook/UserSettingsManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-core/src/main/java/com/facebook/appevents/AccessTokenAppIdPair.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-core/src/main/java/com/facebook/appevents/AnalyticsUserIDStore.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-core/src/main/java/com/facebook/appevents/AppEvent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-core/src/main/java/com/facebook/appevents/AppEventCollection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-core/src/main/java/com/facebook/appevents/AppEventQueue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-core/src/main/java/com/facebook/appevents/AppEventStore.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-core/src/main/java/com/facebook/appevents/AppEventsConstants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-core/src/main/java/com/facebook/appevents/AppEventsLogger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-core/src/main/java/com/facebook/appevents/AppEventsLoggerImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-core/src/main/java/com/facebook/appevents/AppEventsManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-core/src/main/java/com/facebook/appevents/FacebookSDKJSInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-core/src/main/java/com/facebook/appevents/FlushReason.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-core/src/main/java/com/facebook/appevents/FlushResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-core/src/main/java/com/facebook/appevents/FlushStatistics.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-core/src/main/java/com/facebook/appevents/InternalAppEventsLogger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-core/src/main/java/com/facebook/appevents/PerformanceGuardian.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-core/src/main/java/com/facebook/appevents/PersistedEvents.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-core/src/main/java/com/facebook/appevents/SessionEventsState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-core/src/main/java/com/facebook/appevents/UserDataStore.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-core/src/main/java/com/facebook/appevents/aam/MetadataIndexer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-core/src/main/java/com/facebook/appevents/aam/MetadataMatcher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-core/src/main/java/com/facebook/appevents/aam/MetadataRule.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-core/src/main/java/com/facebook/appevents/aam/MetadataViewObserver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-core/src/main/java/com/facebook/appevents/codeless/CodelessLoggingEventListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-core/src/main/java/com/facebook/appevents/codeless/CodelessManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-core/src/main/java/com/facebook/appevents/codeless/CodelessMatcher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-core/src/main/java/com/facebook/appevents/codeless/RCTCodelessLoggingEventListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-core/src/main/java/com/facebook/appevents/codeless/ViewIndexer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-core/src/main/java/com/facebook/appevents/codeless/ViewIndexingTrigger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-core/src/main/java/com/facebook/appevents/codeless/internal/Constants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-core/src/main/java/com/facebook/appevents/codeless/internal/EventBinding.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-core/src/main/java/com/facebook/appevents/codeless/internal/ParameterComponent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-core/src/main/java/com/facebook/appevents/codeless/internal/PathComponent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-core/src/main/java/com/facebook/appevents/codeless/internal/SensitiveUserDataUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-core/src/main/java/com/facebook/appevents/codeless/internal/UnityReflection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-core/src/main/java/com/facebook/appevents/codeless/internal/ViewHierarchy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-core/src/main/java/com/facebook/appevents/eventdeactivation/EventDeactivationManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-core/src/main/java/com/facebook/appevents/integrity/IntegrityManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-core/src/main/java/com/facebook/appevents/internal/ActivityLifecycleTracker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-core/src/main/java/com/facebook/appevents/internal/AppEventUtility.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-core/src/main/java/com/facebook/appevents/internal/AppEventsLoggerUtility.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-core/src/main/java/com/facebook/appevents/internal/AutomaticAnalyticsLogger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-core/src/main/java/com/facebook/appevents/internal/Constants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-core/src/main/java/com/facebook/appevents/internal/FileDownloadTask.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-core/src/main/java/com/facebook/appevents/internal/HashUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-core/src/main/java/com/facebook/appevents/internal/InAppPurchaseActivityLifecycleTracker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-core/src/main/java/com/facebook/appevents/internal/InAppPurchaseEventManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-core/src/main/java/com/facebook/appevents/internal/SessionInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-core/src/main/java/com/facebook/appevents/internal/SessionLogger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-core/src/main/java/com/facebook/appevents/internal/SourceApplicationInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-core/src/main/java/com/facebook/appevents/internal/ViewHierarchyConstants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-core/src/main/java/com/facebook/appevents/ml/MTensor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-core/src/main/java/com/facebook/appevents/ml/Model.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-core/src/main/java/com/facebook/appevents/ml/ModelManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-core/src/main/java/com/facebook/appevents/ml/Operator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-core/src/main/java/com/facebook/appevents/ml/Utils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-core/src/main/java/com/facebook/appevents/restrictivedatafilter/RestrictiveDataManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-core/src/main/java/com/facebook/appevents/suggestedevents/FeatureExtractor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-core/src/main/java/com/facebook/appevents/suggestedevents/PredictionHistoryManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-core/src/main/java/com/facebook/appevents/suggestedevents/SuggestedEventViewHierarchy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-core/src/main/java/com/facebook/appevents/suggestedevents/SuggestedEventsManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-core/src/main/java/com/facebook/appevents/suggestedevents/ViewObserver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-core/src/main/java/com/facebook/appevents/suggestedevents/ViewOnClickListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-core/src/main/java/com/facebook/core/Core.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-core/src/main/java/com/facebook/internal/AnalyticsEvents.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-core/src/main/java/com/facebook/internal/AttributionIdentifiers.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-core/src/main/java/com/facebook/internal/BoltsMeasurementEventListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-core/src/main/java/com/facebook/internal/BundleJSONConverter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-core/src/main/java/com/facebook/internal/CallbackManagerImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-core/src/main/java/com/facebook/internal/FacebookInitProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-core/src/main/java/com/facebook/internal/FacebookRequestErrorClassification.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-core/src/main/java/com/facebook/internal/FacebookSignatureValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-core/src/main/java/com/facebook/internal/FeatureManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-core/src/main/java/com/facebook/internal/FetchedAppGateKeepersManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-core/src/main/java/com/facebook/internal/FetchedAppSettings.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-core/src/main/java/com/facebook/internal/FetchedAppSettingsManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-core/src/main/java/com/facebook/internal/FileLruCache.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-core/src/main/java/com/facebook/internal/ImageDownloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-core/src/main/java/com/facebook/internal/ImageRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-core/src/main/java/com/facebook/internal/ImageResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-core/src/main/java/com/facebook/internal/ImageResponseCache.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-core/src/main/java/com/facebook/internal/InstallReferrerUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-core/src/main/java/com/facebook/internal/InternalSettings.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-core/src/main/java/com/facebook/internal/LockOnGetVariable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-core/src/main/java/com/facebook/internal/Logger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-core/src/main/java/com/facebook/internal/NativeAppCallAttachmentStore.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-core/src/main/java/com/facebook/internal/NativeProtocol.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-core/src/main/java/com/facebook/internal/ProfileInformationCache.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-core/src/main/java/com/facebook/internal/ServerProtocol.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-core/src/main/java/com/facebook/internal/SmartLoginOption.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-core/src/main/java/com/facebook/internal/UrlRedirectCache.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-core/src/main/java/com/facebook/internal/Utility.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-core/src/main/java/com/facebook/internal/Validate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-core/src/main/java/com/facebook/internal/WorkQueue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-core/src/main/java/com/facebook/internal/instrument/ExceptionAnalyzer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-core/src/main/java/com/facebook/internal/instrument/InstrumentData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-core/src/main/java/com/facebook/internal/instrument/InstrumentManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-core/src/main/java/com/facebook/internal/instrument/InstrumentUtility.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-core/src/main/java/com/facebook/internal/instrument/crashreport/CrashHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-core/src/main/java/com/facebook/internal/instrument/crashshield/AutoHandleExceptions.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-core/src/main/java/com/facebook/internal/instrument/crashshield/CrashShieldHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-core/src/main/java/com/facebook/internal/instrument/crashshield/NoAutoExceptionHandling.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-core/src/main/java/com/facebook/internal/instrument/errorreport/ErrorReportData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-core/src/main/java/com/facebook/internal/instrument/errorreport/ErrorReportHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-core/src/main/java/com/facebook/internal/instrument/threadcheck/ThreadCheckHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-core/src/main/java/com/facebook/internal/logging/ExternalLog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-core/src/main/java/com/facebook/internal/logging/LogCategory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-core/src/main/java/com/facebook/internal/logging/LogEvent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-core/src/main/java/com/facebook/internal/logging/LoggingCache.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-core/src/main/java/com/facebook/internal/logging/LoggingManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-core/src/main/java/com/facebook/internal/logging/LoggingStore.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-core/src/main/java/com/facebook/internal/logging/monitor/MetricsUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-core/src/main/java/com/facebook/internal/logging/monitor/Monitor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-core/src/main/java/com/facebook/internal/logging/monitor/MonitorLog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-core/src/main/java/com/facebook/internal/logging/monitor/MonitorLogServerProtocol.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-core/src/main/java/com/facebook/internal/logging/monitor/MonitorLoggingManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-core/src/main/java/com/facebook/internal/logging/monitor/MonitorLoggingQueue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-core/src/main/java/com/facebook/internal/logging/monitor/MonitorLoggingStore.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-core/src/main/java/com/facebook/internal/logging/monitor/MonitorManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-core/src/main/java/com/facebook/internal/logging/monitor/PerformanceEventName.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-core/src/main/java/com/facebook/internal/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-core/src/main/java/com/facebook/internal/qualityvalidation/Excuse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-core/src/main/java/com/facebook/internal/qualityvalidation/ExcusesForDesignViolations.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-core/src/main/java/com/facebook/internal/security/CertificateUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-core/src/main/java/com/facebook/login/DefaultAudience.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-gamingservices/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-gamingservices/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-gamingservices/proguard-rules.pro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-gamingservices/src/main/AndroidManifest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-gamingservices/src/main/java/com/facebook/gamingservices/FriendFinderDialog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-gamingservices/src/main/java/com/facebook/gamingservices/GameRequestDialog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-gamingservices/src/main/java/com/facebook/gamingservices/GamingGroupIntegration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-gamingservices/src/main/java/com/facebook/gamingservices/GamingImageUploader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-gamingservices/src/main/java/com/facebook/gamingservices/GamingServices.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-gamingservices/src/main/java/com/facebook/gamingservices/GamingVideoUploader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-gamingservices/src/main/java/com/facebook/gamingservices/OpenGamingMediaDialog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-gamingservices/src/main/java/com/facebook/gamingservices/cloudgaming/AppToUserNotificationSender.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-gamingservices/src/main/java/com/facebook/gamingservices/cloudgaming/CloudGameLoginHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-gamingservices/src/main/java/com/facebook/gamingservices/cloudgaming/DaemonReceiver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-gamingservices/src/main/java/com/facebook/gamingservices/cloudgaming/DaemonRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-gamingservices/src/main/java/com/facebook/gamingservices/cloudgaming/GameFeaturesLibrary.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-gamingservices/src/main/java/com/facebook/gamingservices/cloudgaming/InAppAdLibrary.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-gamingservices/src/main/java/com/facebook/gamingservices/cloudgaming/InAppPurchaseLibrary.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-gamingservices/src/main/java/com/facebook/gamingservices/cloudgaming/PlayableAdsLibrary.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-gamingservices/src/main/java/com/facebook/gamingservices/cloudgaming/internal/SDKAnalyticsEvents.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-gamingservices/src/main/java/com/facebook/gamingservices/cloudgaming/internal/SDKConstants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-gamingservices/src/main/java/com/facebook/gamingservices/cloudgaming/internal/SDKLogger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-gamingservices/src/main/java/com/facebook/gamingservices/cloudgaming/internal/SDKMessageEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-gamingservices/src/main/java/com/facebook/gamingservices/cloudgaming/internal/SDKShareIntentEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-gamingservices/src/main/java/com/facebook/gamingservices/internal/GamingMediaUploader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-login/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-login/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-login/proguard-rules.pro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-login/src/main/AndroidManifest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-login/src/main/java/com/facebook/login/DeviceLoginManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-login/src/main/java/com/facebook/login/Login.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-login/src/main/java/com/facebook/login/widget/DeviceLoginButton.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-login/src/main/java/com/facebook/login/widget/LoginButton.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-login/src/main/java/com/facebook/login/widget/ProfilePictureView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-login/src/main/java/com/facebook/login/widget/ToolTipPopup.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-login/src/main/res/drawable-hdpi/com_facebook_tooltip_black_background.9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-login/src/main/res/drawable-hdpi/com_facebook_tooltip_black_bottomnub.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-login/src/main/res/drawable-hdpi/com_facebook_tooltip_black_topnub.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-login/src/main/res/drawable-hdpi/com_facebook_tooltip_black_xout.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-login/src/main/res/drawable-hdpi/com_facebook_tooltip_blue_background.9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-login/src/main/res/drawable-hdpi/com_facebook_tooltip_blue_bottomnub.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-login/src/main/res/drawable-hdpi/com_facebook_tooltip_blue_topnub.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-login/src/main/res/drawable-hdpi/com_facebook_tooltip_blue_xout.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-login/src/main/res/drawable-mdpi/com_facebook_profile_picture_blank_portrait.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-login/src/main/res/drawable-mdpi/com_facebook_profile_picture_blank_square.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-login/src/main/res/drawable-mdpi/com_facebook_tooltip_black_background.9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-login/src/main/res/drawable-mdpi/com_facebook_tooltip_black_bottomnub.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-login/src/main/res/drawable-mdpi/com_facebook_tooltip_black_topnub.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-login/src/main/res/drawable-mdpi/com_facebook_tooltip_black_xout.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-login/src/main/res/drawable-mdpi/com_facebook_tooltip_blue_background.9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-login/src/main/res/drawable-mdpi/com_facebook_tooltip_blue_bottomnub.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-login/src/main/res/drawable-mdpi/com_facebook_tooltip_blue_topnub.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-login/src/main/res/drawable-mdpi/com_facebook_tooltip_blue_xout.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-login/src/main/res/drawable-xhdpi/com_facebook_tooltip_black_background.9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-login/src/main/res/drawable-xhdpi/com_facebook_tooltip_black_bottomnub.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-login/src/main/res/drawable-xhdpi/com_facebook_tooltip_black_topnub.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-login/src/main/res/drawable-xhdpi/com_facebook_tooltip_black_xout.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-login/src/main/res/drawable-xhdpi/com_facebook_tooltip_blue_background.9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-login/src/main/res/drawable-xhdpi/com_facebook_tooltip_blue_bottomnub.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-login/src/main/res/drawable-xhdpi/com_facebook_tooltip_blue_topnub.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-login/src/main/res/drawable-xhdpi/com_facebook_tooltip_blue_xout.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-login/src/main/res/layout/com_facebook_tooltip_bubble.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-login/src/main/res/values-af/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-login/src/main/res/values-ar/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-login/src/main/res/values-bn/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-login/src/main/res/values-cs/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-login/src/main/res/values-da/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-login/src/main/res/values-de/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-login/src/main/res/values-el/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-login/src/main/res/values-en-rGB/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-login/src/main/res/values-es-rES/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-login/src/main/res/values-es/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-login/src/main/res/values-fi/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-login/src/main/res/values-fr-rCA/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-login/src/main/res/values-fr/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-login/src/main/res/values-gu/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-login/src/main/res/values-hi/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-login/src/main/res/values-hr/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-login/src/main/res/values-hu/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-login/src/main/res/values-in/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-login/src/main/res/values-it/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-login/src/main/res/values-iw/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-login/src/main/res/values-ja/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-login/src/main/res/values-kn/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-login/src/main/res/values-ko/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-login/src/main/res/values-ml/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-login/src/main/res/values-mr/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-login/src/main/res/values-ms/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-login/src/main/res/values-nb/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-login/src/main/res/values-nl/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-login/src/main/res/values-pa/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-login/src/main/res/values-pl/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-login/src/main/res/values-pt-rPT/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-login/src/main/res/values-pt/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-login/src/main/res/values-ro/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-login/src/main/res/values-ru/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-login/src/main/res/values-sk/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-login/src/main/res/values-sv/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-login/src/main/res/values-ta/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-login/src/main/res/values-te/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-login/src/main/res/values-th/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-login/src/main/res/values-tl/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-login/src/main/res/values-tr/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-login/src/main/res/values-vi/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-login/src/main/res/values-zh-rCN/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-login/src/main/res/values-zh-rHK/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-login/src/main/res/values-zh-rTW/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-login/src/main/res/values/attrs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-login/src/main/res/values/dimens.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-login/src/main/res/values/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-login/src/main/res/values/styles.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-messenger/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-messenger/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-messenger/proguard-rules.pro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-messenger/src/main/AndroidManifest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-messenger/src/main/java/com/facebook/messenger/Messenger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-messenger/src/main/java/com/facebook/messenger/MessengerThreadParams.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-messenger/src/main/java/com/facebook/messenger/MessengerUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-messenger/src/main/java/com/facebook/messenger/ShareToMessengerParams.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-messenger/src/main/java/com/facebook/messenger/ShareToMessengerParamsBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-messenger/src/main/res/drawable-hdpi/messenger_bubble_large_blue.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-messenger/src/main/res/drawable-hdpi/messenger_bubble_large_white.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-messenger/src/main/res/drawable-hdpi/messenger_bubble_small_blue.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-messenger/src/main/res/drawable-hdpi/messenger_bubble_small_white.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-messenger/src/main/res/drawable-hdpi/messenger_button_send_round_shadow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-messenger/src/main/res/drawable-mdpi/messenger_bubble_large_blue.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-messenger/src/main/res/drawable-mdpi/messenger_bubble_large_white.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-messenger/src/main/res/drawable-mdpi/messenger_bubble_small_blue.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-messenger/src/main/res/drawable-mdpi/messenger_bubble_small_white.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-messenger/src/main/res/drawable-mdpi/messenger_button_send_round_shadow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-messenger/src/main/res/drawable-xhdpi/messenger_bubble_large_blue.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-messenger/src/main/res/drawable-xhdpi/messenger_bubble_large_white.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-messenger/src/main/res/drawable-xhdpi/messenger_bubble_small_blue.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-messenger/src/main/res/drawable-xhdpi/messenger_bubble_small_white.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-messenger/src/main/res/drawable-xhdpi/messenger_button_send_round_shadow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-messenger/src/main/res/drawable-xxhdpi/messenger_bubble_large_blue.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-messenger/src/main/res/drawable-xxhdpi/messenger_bubble_large_white.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-messenger/src/main/res/drawable-xxhdpi/messenger_bubble_small_blue.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-messenger/src/main/res/drawable-xxhdpi/messenger_bubble_small_white.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-messenger/src/main/res/drawable-xxhdpi/messenger_button_send_round_shadow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-messenger/src/main/res/drawable/messenger_button_blue_bg_round.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-messenger/src/main/res/drawable/messenger_button_blue_bg_selector.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-messenger/src/main/res/drawable/messenger_button_white_bg_round.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-messenger/src/main/res/drawable/messenger_button_white_bg_selector.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-messenger/src/main/res/layout/messenger_button_send_blue_large.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-messenger/src/main/res/layout/messenger_button_send_blue_round.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-messenger/src/main/res/layout/messenger_button_send_blue_small.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-messenger/src/main/res/layout/messenger_button_send_white_large.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-messenger/src/main/res/layout/messenger_button_send_white_round.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-messenger/src/main/res/layout/messenger_button_send_white_small.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-messenger/src/main/res/values/messenger_button_strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-messenger/src/main/res/values/messenger_button_styles.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-places/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-places/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-places/proguard-rules.pro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-places/src/main/AndroidManifest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-places/src/main/java/com/facebook/places/PlaceManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-places/src/main/java/com/facebook/places/Places.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-places/src/main/java/com/facebook/places/internal/BleScanner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-places/src/main/java/com/facebook/places/internal/BleScannerImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-places/src/main/java/com/facebook/places/internal/BleScannerLegacy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-places/src/main/java/com/facebook/places/internal/BluetoothScanResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-places/src/main/java/com/facebook/places/internal/LocationPackage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-places/src/main/java/com/facebook/places/internal/LocationPackageManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-places/src/main/java/com/facebook/places/internal/LocationPackageRequestParams.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-places/src/main/java/com/facebook/places/internal/LocationScanner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-places/src/main/java/com/facebook/places/internal/LocationScannerImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-places/src/main/java/com/facebook/places/internal/ScannerException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-places/src/main/java/com/facebook/places/internal/ScannerFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-places/src/main/java/com/facebook/places/internal/WifiScanResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-places/src/main/java/com/facebook/places/internal/WifiScanner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-places/src/main/java/com/facebook/places/internal/WifiScannerImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-places/src/main/java/com/facebook/places/model/CurrentPlaceFeedbackRequestParams.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-places/src/main/java/com/facebook/places/model/CurrentPlaceRequestParams.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-places/src/main/java/com/facebook/places/model/PlaceFields.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-places/src/main/java/com/facebook/places/model/PlaceInfoRequestParams.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-places/src/main/java/com/facebook/places/model/PlaceSearchRequestParams.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-share/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-share/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-share/proguard-rules.pro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-share/src/main/AndroidManifest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-share/src/main/java/com/facebook/internal/CollectionMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-share/src/main/java/com/facebook/internal/Mutable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-share/src/main/java/com/facebook/share/DeviceShareDialog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-share/src/main/java/com/facebook/share/Share.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-share/src/main/java/com/facebook/share/ShareApi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-share/src/main/java/com/facebook/share/internal/AppInviteDialogFeature.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-share/src/main/java/com/facebook/share/internal/GameRequestValidation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-share/src/main/java/com/facebook/share/internal/MessageDialogFeature.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-share/src/main/java/com/facebook/share/internal/OpenGraphMessageDialogFeature.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-share/src/main/java/com/facebook/share/internal/VideoUploader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-share/src/main/java/com/facebook/share/model/AppInviteContent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-share/src/main/java/com/facebook/share/widget/AppInviteDialog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-share/src/main/java/com/facebook/share/widget/CreateAppGroupDialog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-share/src/main/java/com/facebook/share/widget/DeviceShareButton.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-share/src/main/java/com/facebook/share/widget/GameRequestDialog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-share/src/main/java/com/facebook/share/widget/JoinAppGroupDialog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-share/src/main/java/com/facebook/share/widget/MessageDialog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-share/src/main/java/com/facebook/share/widget/SendButton.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-share/src/main/java/com/facebook/share/widget/ShareButton.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-share/src/main/java/com/facebook/share/widget/ShareButtonBase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-share/src/main/res/color/com_facebook_send_button_text_color.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-share/src/main/res/drawable-hdpi/com_facebook_button_send_icon_blue.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-share/src/main/res/drawable-hdpi/com_facebook_button_send_icon_white.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-share/src/main/res/drawable-mdpi/com_facebook_button_send_icon_blue.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-share/src/main/res/drawable-mdpi/com_facebook_button_send_icon_white.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-share/src/main/res/drawable-xhdpi/com_facebook_button_send_icon_blue.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-share/src/main/res/drawable-xhdpi/com_facebook_button_send_icon_white.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-share/src/main/res/drawable-xxhdpi/com_facebook_button_send_icon_white.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-share/src/main/res/drawable/com_facebook_button_send_background.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-share/src/main/res/drawable/com_facebook_send_button_icon.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook-share/src/main/res/values/styles.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/lint.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/proguard-project.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/src/androidTest/AndroidManifest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/src/androidTest/assets/DarkScreen.mov" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/src/androidTest/java/com/facebook/AsyncRequestTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/src/androidTest/java/com/facebook/BatchRequestTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/src/androidTest/java/com/facebook/FacebookActivityTestCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/src/androidTest/java/com/facebook/FacebookActivityTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/src/androidTest/java/com/facebook/FacebookAppLinkResolverTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/src/androidTest/java/com/facebook/FacebookTestCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/src/androidTest/java/com/facebook/FragmentTestCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/src/androidTest/java/com/facebook/GraphRequestBatchBridge.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/src/androidTest/java/com/facebook/GraphRequestTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/src/androidTest/java/com/facebook/GraphResponseBridge.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/src/androidTest/java/com/facebook/GraphUtilTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/src/androidTest/java/com/facebook/ProfileManagerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/src/androidTest/java/com/facebook/RequestTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/src/androidTest/java/com/facebook/TestBlocker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/src/androidTest/java/com/facebook/TestUserManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/src/androidTest/java/com/facebook/TestUserManagerTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/src/androidTest/java/com/facebook/TestUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/src/androidTest/java/com/facebook/WaitForBroadcastReceiver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/src/androidTest/java/com/facebook/appevents/AppEventsLoggerTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/src/androidTest/java/com/facebook/internal/GraphUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/src/androidTest/java/com/facebook/internal/ImageResponseCacheTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/src/androidTest/java/com/facebook/internal/UtilityTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/src/androidTest/java/com/facebook/login/LoginClientTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/src/androidTest/java/com/facebook/widget/FacebookDialogTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/src/androidTest/res/values/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/src/main/AndroidManifest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/src/main/java/com/facebook/all/All.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/src/test/AndroidManifest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/src/test/java/com/facebook/AccessTokenCacheTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/src/test/java/com/facebook/AccessTokenManagerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/src/test/java/com/facebook/AccessTokenTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/src/test/java/com/facebook/AccessTokenTestHelper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/src/test/java/com/facebook/AccessTokenTrackerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/src/test/java/com/facebook/ErrorClassificationTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/src/test/java/com/facebook/FacebookContentProviderTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/src/test/java/com/facebook/FacebookFuzzyInputPowerMockTestCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/src/test/java/com/facebook/FacebookGraphRequestErrorTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/src/test/java/com/facebook/FacebookPowerMockTestCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/src/test/java/com/facebook/FacebookSdkPowerMockTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/src/test/java/com/facebook/FacebookTestCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/src/test/java/com/facebook/GraphErrorTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/src/test/java/com/facebook/GraphRequestTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/src/test/java/com/facebook/LegacyTokenCacheTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/src/test/java/com/facebook/LoadAppSettingsFuzzyTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/src/test/java/com/facebook/MockSharedPreference.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/src/test/java/com/facebook/PowerMockIntegrationTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/src/test/java/com/facebook/ProfileCacheTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/src/test/java/com/facebook/ProfileManagerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/src/test/java/com/facebook/ProfileTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/src/test/java/com/facebook/ProfileTrackerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/src/test/java/com/facebook/ProgressNoopOutputStreamTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/src/test/java/com/facebook/ProgressOutputStreamTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/src/test/java/com/facebook/TestUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/src/test/java/com/facebook/UserSettingsManagerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/src/test/java/com/facebook/appevents/AppEventTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/src/test/java/com/facebook/appevents/AppEventTestUtilities.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/src/test/java/com/facebook/appevents/AppEventUtilityTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/src/test/java/com/facebook/appevents/AppEventsLoggerImplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/src/test/java/com/facebook/appevents/AppEventsLoggerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/src/test/java/com/facebook/appevents/AutomaticAnalyticsTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/src/test/java/com/facebook/appevents/InternalAppEventsLoggerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/src/test/java/com/facebook/appevents/PerformanceGuardianTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/src/test/java/com/facebook/appevents/UserDataStoreTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/src/test/java/com/facebook/appevents/aam/MetadataIndexerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/src/test/java/com/facebook/appevents/aam/MetadataMatcherTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/src/test/java/com/facebook/appevents/aam/MetadataRuleTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/src/test/java/com/facebook/appevents/aam/MetadataViewObserverTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/src/test/java/com/facebook/appevents/codeless/CodelessTestBase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/src/test/java/com/facebook/appevents/codeless/SensitiveUserDataUtilsTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/src/test/java/com/facebook/appevents/codeless/ViewHierarchyTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/src/test/java/com/facebook/appevents/codeless/ViewTrackerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/src/test/java/com/facebook/appevents/eventdeactivation/EventDeactivationManagerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/src/test/java/com/facebook/appevents/integrity/IntegrityManagerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/src/test/java/com/facebook/appevents/ml/OperatorTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/src/test/java/com/facebook/appevents/restrictivedatafilter/RestrictiveDataManagerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/src/test/java/com/facebook/applinks/AppLinkDataTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/src/test/java/com/facebook/internal/BundleJSONConverterTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/src/test/java/com/facebook/internal/CallbackManagerImplPowerMockTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/src/test/java/com/facebook/internal/FacebookRequestErrorClassificationTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/src/test/java/com/facebook/internal/FacebookSignatureValidatorTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/src/test/java/com/facebook/internal/FileLruCacheTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/src/test/java/com/facebook/internal/JsonUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/src/test/java/com/facebook/internal/JsonUtilTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/src/test/java/com/facebook/internal/NativeAppCallAttachmentStoreTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/src/test/java/com/facebook/internal/NativeProtocolTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/src/test/java/com/facebook/internal/ShareInternalUtilityTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/src/test/java/com/facebook/internal/UtilityIntersectRangeTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/src/test/java/com/facebook/internal/UtilityTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/src/test/java/com/facebook/internal/ValidateTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/src/test/java/com/facebook/internal/WorkQueueTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/src/test/java/com/facebook/internal/instrument/ExceptionAnalyzerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/src/test/java/com/facebook/internal/logging/monitor/MonitorLogTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/src/test/java/com/facebook/internal/logging/monitor/MonitorLoggingManagerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/src/test/java/com/facebook/internal/logging/monitor/MonitorLoggingQueueTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/src/test/java/com/facebook/internal/logging/monitor/MonitorLoggingStoreTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/src/test/java/com/facebook/internal/logging/monitor/MonitorLoggingTestUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/src/test/java/com/facebook/internal/logging/monitor/MonitorTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/src/test/java/com/facebook/login/CustomTabLoginMethodHandlerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/src/test/java/com/facebook/login/FacebookLiteLoginMethodHandlerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/src/test/java/com/facebook/login/GetTokenLoginMethodHandlerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/src/test/java/com/facebook/login/KatanaProxyLoginMethodHandlerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/src/test/java/com/facebook/login/LoginClientTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/src/test/java/com/facebook/login/LoginHandlerTestCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/src/test/java/com/facebook/login/LoginManagerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/src/test/java/com/facebook/login/LoginResultTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/src/test/java/com/facebook/login/WebViewLoginMethodHandlerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/src/test/java/com/facebook/messenger/MessengerUtilsTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/src/test/java/com/facebook/places/PlaceManagerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/src/test/java/com/facebook/places/model/CurrentPlaceFeedbackRequestParamsTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/src/test/java/com/facebook/places/model/CurrentPlaceRequestParamsTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/src/test/java/com/facebook/places/model/PlaceInfoRequestParamsTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/src/test/java/com/facebook/places/model/PlaceSearchRequestParamsTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/src/test/java/com/facebook/referrals/ReferralClientTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/src/test/java/com/facebook/referrals/ReferralManagerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/src/test/java/com/facebook/share/internal/ShareContentValidationTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/src/test/java/com/facebook/share/internal/ShareOpenGraphUtilityTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/src/test/java/com/facebook/share/model/ShareModelTestUtility.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/src/test/java/com/facebook/share/model/ShareOpenGraphActionBuilderTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/src/test/java/com/facebook/share/model/ShareOpenGraphContentBuilderTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/src/test/java/com/facebook/share/model/ShareOpenGraphObjectBuilderTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/src/test/java/com/facebook/share/model/SharePhotoBuilderTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/src/test/java/com/facebook/share/model/SharePhotoContentBuilderTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/src/test/java/com/facebook/share/model/ShareVideoBuilderTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/src/test/java/com/facebook/share/model/ShareVideoContentBuilderTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/src/test/java/org/mockito/configuration/MockitoConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/src/test/kotlin/com/facebook/internal/FeatureManagerTest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/src/test/kotlin/com/facebook/internal/FetchedAppGateKeepersManagerTest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/src/test/kotlin/com/facebook/internal/FetchedAppSettingsManagerTest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/src/test/kotlin/com/facebook/internal/ServerProtocolTest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/src/test/kotlin/com/facebook/internal/logging/monitor/MetricsUtilTest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/src/test/kotlin/com/facebook/internal/logging/monitor/MonitorManagerTest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/src/test/resources/drawable-hdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/src/test/resources/drawable-mdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/src/test/resources/drawable-xhdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/src/test/resources/drawable-xxhdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/src/test/resources/layout/activity_main.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/src/test/resources/menu/menu_main.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/src/test/resources/values-w820dp/dimens.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/src/test/resources/values/dimens.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/src/test/resources/values/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facebook/src/test/resources/values/styles.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/maven.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/FBLoginSample/CONTRIBUTING.mdown" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/FBLoginSample/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/FBLoginSample/README.mdown" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/FBLoginSample/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/FBLoginSample/gradle.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/FBLoginSample/proguard-rules.pro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/FBLoginSample/src/androidTest/java/com/facebook/fbloginsample/ExampleInstrumentedTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/FBLoginSample/src/main/AndroidManifest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/FBLoginSample/src/main/java/com/facebook/fbloginsample/FBLoginSampleApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/FBLoginSample/src/main/java/com/facebook/fbloginsample/FacebookLoginActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/FBLoginSample/src/main/java/com/facebook/fbloginsample/MainActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/FBLoginSample/src/main/java/com/facebook/fbloginsample/PermissionsActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/FBLoginSample/src/main/java/com/facebook/fbloginsample/PostFeedActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/FBLoginSample/src/main/java/com/facebook/fbloginsample/ProfileActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/FBLoginSample/src/main/java/com/facebook/fbloginsample/Util.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/FBLoginSample/src/main/java/com/facebook/fbloginsample/adapters/PostAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/FBLoginSample/src/main/java/com/facebook/fbloginsample/callbacks/GetPostsCallback.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/FBLoginSample/src/main/java/com/facebook/fbloginsample/callbacks/GetUserCallback.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/FBLoginSample/src/main/java/com/facebook/fbloginsample/callbacks/PermissionCallback.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/FBLoginSample/src/main/java/com/facebook/fbloginsample/callbacks/PublishPostCallback.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/FBLoginSample/src/main/java/com/facebook/fbloginsample/entities/Post.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/FBLoginSample/src/main/java/com/facebook/fbloginsample/entities/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/FBLoginSample/src/main/java/com/facebook/fbloginsample/requests/PermissionRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/FBLoginSample/src/main/java/com/facebook/fbloginsample/requests/PostsRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/FBLoginSample/src/main/java/com/facebook/fbloginsample/requests/UserRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/FBLoginSample/src/main/res/drawable/placeholder.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/FBLoginSample/src/main/res/layout/activity_facebook_login.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/FBLoginSample/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/FBLoginSample/src/main/res/layout/activity_permissions.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/FBLoginSample/src/main/res/layout/activity_post_feed.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/FBLoginSample/src/main/res/layout/activity_profile.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/FBLoginSample/src/main/res/layout/news_feed_item.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/FBLoginSample/src/main/res/mipmap-hdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/FBLoginSample/src/main/res/mipmap-hdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/FBLoginSample/src/main/res/mipmap-mdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/FBLoginSample/src/main/res/mipmap-mdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/FBLoginSample/src/main/res/mipmap-xhdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/FBLoginSample/src/main/res/mipmap-xhdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/FBLoginSample/src/main/res/mipmap-xxhdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/FBLoginSample/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/FBLoginSample/src/main/res/mipmap-xxxhdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/FBLoginSample/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/FBLoginSample/src/main/res/values/colors.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/FBLoginSample/src/main/res/values/dimens.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/FBLoginSample/src/main/res/values/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/FBLoginSample/src/main/res/values/styles.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/FBLoginSample/src/test/java/com/facebook/fbloginsample/ExampleUnitTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/HelloFacebookSample/AndroidManifest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/HelloFacebookSample/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/HelloFacebookSample/proguard-project.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/HelloFacebookSample/res/drawable-hdpi/icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/HelloFacebookSample/res/drawable-mdpi/icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/HelloFacebookSample/res/drawable-xhdpi/icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/HelloFacebookSample/res/drawable/icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/HelloFacebookSample/res/layout/main.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/HelloFacebookSample/res/values/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/HelloFacebookSample/src/com/example/hellofacebook/HelloFacebookBroadcastReceiver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/HelloFacebookSample/src/com/example/hellofacebook/HelloFacebookSampleActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/MessengerSendSample/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/MessengerSendSample/src/main/AndroidManifest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/MessengerSendSample/src/main/java/com/facebook/samples/messenger/send/MainActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/MessengerSendSample/src/main/res/drawable-xhdpi/tree.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/MessengerSendSample/src/main/res/layout/main_activity.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/MessengerSendSample/src/main/res/values/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/PlacesGraphSample/AndroidManifest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/PlacesGraphSample/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/PlacesGraphSample/proguard-project.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/PlacesGraphSample/res/drawable-hdpi/icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/PlacesGraphSample/res/drawable-mdpi/icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/PlacesGraphSample/res/drawable-xhdpi/icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/PlacesGraphSample/res/drawable/icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/PlacesGraphSample/res/layout/current_place_fragment.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/PlacesGraphSample/res/layout/current_place_list_item.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/PlacesGraphSample/res/layout/login_fragment.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/PlacesGraphSample/res/layout/main_activity.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/PlacesGraphSample/res/layout/place_info_fragment.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/PlacesGraphSample/res/layout/place_info_item.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/PlacesGraphSample/res/layout/place_list_item.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/PlacesGraphSample/res/layout/place_search_fragment.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/PlacesGraphSample/res/values/arrays.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/PlacesGraphSample/res/values/colors.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/PlacesGraphSample/res/values/dimens.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/PlacesGraphSample/res/values/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/PlacesGraphSample/res/values/styles.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/PlacesGraphSample/src/com/example/places/MainActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/PlacesGraphSample/src/com/example/places/PlacesGraphSDKHelper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/PlacesGraphSample/src/com/example/places/adapters/PlaceDetailsAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/PlacesGraphSample/src/com/example/places/adapters/PlaceListAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/PlacesGraphSample/src/com/example/places/fragments/CurrentPlaceDialogFragment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/PlacesGraphSample/src/com/example/places/fragments/LoginFragment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/PlacesGraphSample/src/com/example/places/fragments/PlaceInfoFragment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/PlacesGraphSample/src/com/example/places/fragments/PlaceSearchFragment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/PlacesGraphSample/src/com/example/places/model/AppLink.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/PlacesGraphSample/src/com/example/places/model/CurrentPlaceResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/PlacesGraphSample/src/com/example/places/model/OpeningHours.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/PlacesGraphSample/src/com/example/places/model/Place.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/PlacesGraphSample/src/com/example/places/model/PlaceTextUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/PlacesGraphSample/src/com/example/places/utils/BitmapDownloadTask.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/PlacesGraphSample/src/com/example/places/utils/PlaceFieldData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/PlacesGraphSample/src/com/example/places/utils/PlaceFieldDataFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/RPSSample/AndroidManifest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/RPSSample/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/RPSSample/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/RPSSample/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/RPSSample/post_app_objects.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/RPSSample/proguard-project.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/RPSSample/res/drawable-hdpi/icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/RPSSample/res/drawable-mdpi/icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/RPSSample/res/drawable-xhdpi/icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/RPSSample/res/drawable/app_background.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/RPSSample/res/drawable/fb_logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/RPSSample/res/drawable/ic_build_black_24dp.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/RPSSample/res/drawable/ic_videogame_asset_black_24dp.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/RPSSample/res/drawable/icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/RPSSample/res/drawable/icon_border.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/RPSSample/res/drawable/left_paper.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/RPSSample/res/drawable/left_rock.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/RPSSample/res/drawable/left_scissors.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/RPSSample/res/drawable/profile_default_icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/RPSSample/res/drawable/right_paper.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/RPSSample/res/drawable/right_rock.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/RPSSample/res/drawable/right_scissors.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/RPSSample/res/drawable/usersettings_facebook_logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/RPSSample/res/drawable/usersettings_fragment_background_gradient.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/RPSSample/res/layout/activity_auto_applink_demo.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/RPSSample/res/layout/content_fragment.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/RPSSample/res/layout/fragment_auto_applink.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/RPSSample/res/layout/main.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/RPSSample/res/layout/rps_fragment.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/RPSSample/res/layout/usersettings_fragment.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/RPSSample/res/menu/bottom_nav_menu.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/RPSSample/res/values/colors.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/RPSSample/res/values/dimens.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/RPSSample/res/values/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/RPSSample/res/values/styles.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/RPSSample/src/com/android/vending/billing/IInAppBillingService.aidl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/RPSSample/src/com/example/rps/AutoApplinkDemoActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/RPSSample/src/com/example/rps/AutoApplinkFragment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/RPSSample/src/com/example/rps/CommonObjects.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/RPSSample/src/com/example/rps/ContentFragment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/RPSSample/src/com/example/rps/MainActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/RPSSample/src/com/example/rps/OpenGraphConsts.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/RPSSample/src/com/example/rps/RpsFragment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/RPSSample/src/com/example/rps/RpsGameUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/RPSSample/src/com/example/rps/usersettings/UserSettingsFragment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/ShareIt/AndroidManifest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/ShareIt/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/ShareIt/proguard-project.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/ShareIt/res/drawable-hdpi/goofy.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/ShareIt/res/drawable-hdpi/icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/ShareIt/res/drawable-hdpi/liking.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/ShareIt/res/drawable-hdpi/viking.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/ShareIt/res/drawable-mdpi/goofy.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/ShareIt/res/drawable-mdpi/icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/ShareIt/res/drawable-mdpi/liking.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/ShareIt/res/drawable-mdpi/viking.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/ShareIt/res/drawable-xhdpi/goofy.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/ShareIt/res/drawable-xhdpi/icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/ShareIt/res/drawable-xhdpi/liking.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/ShareIt/res/drawable-xhdpi/viking.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/ShareIt/res/layout/image_slide_view.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/ShareIt/res/layout/main.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/ShareIt/res/layout/share_it_view.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/ShareIt/res/menu/share_menu.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/ShareIt/res/values/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/ShareIt/res/values/styles.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/ShareIt/src/com/example/shareit/ImageViewPager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/ShareIt/src/com/example/shareit/MainActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/ShareIt/src/com/example/shareit/PageSelector.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/ShareIt/src/com/example/shareit/ShareFragment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/ShareIt/src/com/example/shareit/ShareImageFragment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/SwitchUserSample/AndroidManifest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/SwitchUserSample/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/SwitchUserSample/proguard-project.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/SwitchUserSample/res/drawable-hdpi/ic_action_discard.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/SwitchUserSample/res/drawable-hdpi/ic_action_settings.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/SwitchUserSample/res/drawable-hdpi/icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/SwitchUserSample/res/drawable-mdpi/ic_action_discard.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/SwitchUserSample/res/drawable-mdpi/ic_action_settings.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/SwitchUserSample/res/drawable-mdpi/icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/SwitchUserSample/res/drawable-xhdpi/ic_action_discard.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/SwitchUserSample/res/drawable-xhdpi/ic_action_settings.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/SwitchUserSample/res/drawable-xhdpi/icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/SwitchUserSample/res/drawable/icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/SwitchUserSample/res/layout/fragment_profile.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/SwitchUserSample/res/layout/list_item_user.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/SwitchUserSample/res/layout/main.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/SwitchUserSample/res/menu/context_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/SwitchUserSample/res/menu/options_profile.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/SwitchUserSample/res/values/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/SwitchUserSample/src/com/example/switchuser/MainActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/SwitchUserSample/src/com/example/switchuser/ProfileFragment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/SwitchUserSample/src/com/example/switchuser/SettingsFragment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/SwitchUserSample/src/com/example/switchuser/Slot.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/SwitchUserSample/src/com/example/switchuser/UserInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/SwitchUserSample/src/com/example/switchuser/UserInfoCache.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/build_documentation.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/configure_unit_tests.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/secring.gpg.enc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/settings.gradle.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_activity_activity_1_0_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_annotation_annotation_1_1_0_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_appcompat_appcompat_1_2_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_appcompat_appcompat_resources_1_2_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_arch_core_core_common_2_1_0_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_arch_core_core_runtime_2_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_arch_core_core_runtime_2_0_0_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_collection_collection_1_1_0_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_core_core_1_3_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_arch_core_core_runtime_2_0_0_aar.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_cursoradapter_cursoradapter_1_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_cursoradapter_cursoradapter_1_0_0_aar.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_customview_customview_1_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_customview_customview_1_0_0_aar.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_drawerlayout_drawerlayout_1_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_drawerlayout_drawerlayout_1_0_0_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_fragment_fragment_1_1_0_aar.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_interpolator_interpolator_1_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_interpolator_interpolator_1_0_0_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_common_2_1_0_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_livedata_2_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_livedata_2_0_0_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_livedata_core_2_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_livedata_core_2_0_0_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_runtime_2_1_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_viewmodel_2_1_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_livedata_2_0_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_livedata_core_2_0_0_aar.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_loader_loader_1_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_loader_loader_1_0_0_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_multidex_multidex_2_0_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_multidex_multidex_instrumentation_2_0_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_savedstate_savedstate_1_0_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_core_1_3_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_espresso_espresso_core_3_3_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_espresso_espresso_idling_resource_3_3_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_ext_junit_1_1_2_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_monitor_1_3_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_monitor_1_3_0_rc03_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_runner_1_3_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_vectordrawable_vectordrawable_1_1_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_vectordrawable_vectordrawable_animated_1_1_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_versionedparcelable_versionedparcelable_1_1_0_aar.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_viewpager_viewpager_1_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_viewpager_viewpager_1_0_0_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_almworks_sqlite4java_sqlite4java_0_282_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_fasterxml_jackson_core_jackson_annotations_2_12_0_rc1_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_fasterxml_jackson_core_jackson_core_2_12_0_rc1_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_fasterxml_jackson_core_jackson_databind_2_12_0_rc1_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_auto_value_auto_value_annotations_1_6_2_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_code_findbugs_jsr305_3_0_2_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_errorprone_error_prone_annotations_2_2_0_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_guava_failureaccess_1_0_1_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_guava_guava_27_0_1_jre_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_guava_listenablefuture_9999_0_empty_to_avoid_conflict_with_guava_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_j2objc_j2objc_annotations_1_1_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_ibm_icu_icu4j_53_1_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__javax_annotation_javax_annotation_api_1_3_2_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__junit_junit_4_13_1_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__junit_junit_4_13_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__log4j_log4j_1_2_17_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_bouncycastle_bcprov_jdk15on_1_65_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_checkerframework_checker_qual_2_5_2_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_codehaus_mojo_animal_sniffer_annotations_1_17_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_ow2_asm_asm_7_2_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_ow2_asm_asm_analysis_7_2_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_ow2_asm_asm_commons_7_2_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_ow2_asm_asm_tree_7_2_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_ow2_asm_asm_util_7_2_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_robolectric_annotations_4_4_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_robolectric_junit_4_4_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_robolectric_pluginapi_4_4_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_robolectric_plugins_maven_dependency_resolver_4_4_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_robolectric_resources_4_4_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_robolectric_robolectric_4_4_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_robolectric_sandbox_4_4_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_robolectric_shadowapi_4_4_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_robolectric_shadows_framework_4_4_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_robolectric_utils_4_4_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_robolectric_utils_reflector_4_4_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/markdown-navigator-enh.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/markdown-navigator.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_code_findbugs_jsr305_2_0_1_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_javawriter_2_1_1_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__javax_inject_javax_inject_1_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hamcrest_hamcrest_core_1_3_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hamcrest_hamcrest_integration_1_3_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hamcrest_hamcrest_library_1_3_jar.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/webview.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/webview.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/consumer-rules.pro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gradlew.bat" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/local.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/proguard-rules.pro" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/androidTest/java/com/dimaslanjaka/webview/ExampleInstrumentedTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/AndroidManifest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dimaslanjaka/webview/CookieManager.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dimaslanjaka/webview/MainActivity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dimaslanjaka/webview/WebView.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dimaslanjaka/webview/WebViewClient.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dimaslanjaka/webview/WebkitCookieManagerProxy.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/res/layout/main_activity.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/res/values/strings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/dimaslanjaka/webview/ExampleUnitTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/dimaslanjaka/webview/MyActivityTest.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webview/src/main/java/com/dimaslanjaka/components/App.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webview/src/main/java/com/dimaslanjaka/components/log/Log.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webview/src/main/java/com/dimaslanjaka/components/webview/CookieParser.kt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="e501d60e9804" />
   <component name="ExternalProjectsData">
@@ -131,12 +1003,29 @@
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
+        <task path="$PROJECT_DIR$/bot">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
         <projects_view>
           <tree_state>
             <expand>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="WebView-App" type="f1a62948:ProjectNode" />
+                <item name="Facebot" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Facebot" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Facebot" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="other" type="c8890929:TasksNode$1" />
               </path>
             </expand>
             <select />
@@ -148,7 +1037,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="layoutResourceFile_vertical" />
+        <option value="layoutResourceFile" />
         <option value="Class" />
         <option value="Kotlin Class" />
       </list>
@@ -157,41 +1046,50 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-        <option name="mavenHome" value="D:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2020.2.3\plugins\maven\lib\maven3" />
-      </MavenGeneralSettings>
-    </option>
+  <component name="KotlinMultiplatform">
+    <allAvailableExecutables />
   </component>
-  <component name="ProjectId" id="1ioEVOVD4vU6saR60eK3X3mPHbW" />
-  <component name="ProjectLevelVcsManager">
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1iqzZe75TQtviwGHY9l0hGlHeBm" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
+    <option name="compactDirectories" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_directory_selection" value="$PROJECT_DIR$/webview/src/main/java" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.22732626" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
-    <property name="show.unlinked.gradle.project.popup" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="android-custom-viewD:/Workspaces/Android/Android/gradle-plugin/webview/bot/webview/src/main/java/com/dimaslanjaka/components/webview/WebView.java_SELECTED" value="WebView" />
+    <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
+    <property name="multi-representation-previewD:/Workspaces/Android/Android/gradle-plugin/webview/bot/webview/src/main/java/com/dimaslanjaka/components/webview/WebView.java_selected" value="Custom views" />
+    <property name="project.structure.last.edited" value="Suggestions" />
+    <property name="project.structure.proportion" value="0.17" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.notifications" />
+  </component>
+  <component name="PsdUISettings">
+    <option name="LAST_EDITED_BUILD_TYPE" value="debug" />
   </component>
   <component name="RecentsManager">
-    <key name="ExtractSuperBase.RECENT_KEYS">
-      <recent name="java.net" />
-    </key>
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="com.dimaslanjaka.components" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Workspaces\Android\Android\gradle-plugin\webview\bot\webview\src\main\res\values" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration name="WebView-App.webview-app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
-      <module name="WebView-App.webview-app" />
+  <component name="RunManager" selected="Gradle.webview [killJava]">
+    <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="bot.webview-app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
+      <module name="Facebot.bot.webview-app" />
       <option name="DEPLOY" value="true" />
       <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
       <option name="DEPLOY_AS_INSTANT" value="false" />
@@ -218,74 +1116,96 @@
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
       </method>
     </configuration>
+    <configuration name="webview [killJava]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="killJava" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.webview [killJava]" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="729a46be-51d2-4c33-90ed-010d4703635a" name="Default Changelist" comment="" />
-      <created>1602565566571</created>
+      <changelist id="1be43bc2-4a5d-45d6-a452-30755b7b23e9" name="Default Changelist" comment="" />
+      <created>1602649972873</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1602565566571</updated>
+      <updated>1602649972873</updated>
     </task>
     <servers />
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="89" y="0" key="#Project_Structure" timestamp="1602565865032">
+    <state x="488" y="254" key="#Custom_Plugin_Repositories" timestamp="1602656540845">
       <screen x="0" y="0" width="1218" height="720" />
     </state>
-    <state x="89" y="0" key="#Project_Structure/0.0.1218.720@0.0.1218.720" timestamp="1602565865032" />
-    <state x="414" y="66" key="#com.intellij.ide.util.MemberChooser" timestamp="1602587964292">
+    <state x="488" y="254" key="#Custom_Plugin_Repositories/0.0.1218.720@0.0.1218.720" timestamp="1602656540845" />
+    <state x="126" y="106" key="#PSD" timestamp="1602653556356">
       <screen x="0" y="0" width="1218" height="720" />
     </state>
-    <state x="414" y="66" key="#com.intellij.ide.util.MemberChooser/0.0.1218.720@0.0.1218.720" timestamp="1602587964292" />
-    <state x="170" y="284" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1602571746857">
+    <state x="126" y="106" key="#PSD/0.0.1218.720@0.0.1218.720" timestamp="1602653556356" />
+    <state x="414" y="65" key="#com.intellij.ide.util.MemberChooser" timestamp="1602655304745">
       <screen x="0" y="0" width="1218" height="720" />
     </state>
-    <state x="170" y="284" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1218.720@0.0.1218.720" timestamp="1602571746857" />
-    <state x="355" y="241" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages" timestamp="1602571759114">
+    <state x="414" y="65" key="#com.intellij.ide.util.MemberChooser/0.0.1218.720@0.0.1218.720" timestamp="1602655304745" />
+    <state x="189" y="115" key="AndroidCreateResourceFileDialog" timestamp="1602651063074">
       <screen x="0" y="0" width="1218" height="720" />
     </state>
-    <state x="355" y="241" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/0.0.1218.720@0.0.1218.720" timestamp="1602571759114" />
-    <state x="189" y="115" key="AndroidCreateResourceFileDialog" timestamp="1602565621351">
+    <state x="189" y="115" key="AndroidCreateResourceFileDialog/0.0.1218.720@0.0.1218.720" timestamp="1602651063074" />
+    <state x="439" y="132" key="AndroidCreateXmlResourceDialog" timestamp="1602651698515">
       <screen x="0" y="0" width="1218" height="720" />
     </state>
-    <state x="189" y="115" key="AndroidCreateResourceFileDialog/0.0.1218.720@0.0.1218.720" timestamp="1602565621351" />
-    <state width="1175" height="176" key="GridCell.Tab.0.bottom" timestamp="1602590937518">
+    <state x="439" y="132" key="AndroidCreateXmlResourceDialog/0.0.1218.720@0.0.1218.720" timestamp="1602651698515" />
+    <state x="410" y="115" key="FileChooserDialogImpl" timestamp="1602656512450">
       <screen x="0" y="0" width="1218" height="720" />
     </state>
-    <state width="1175" height="176" key="GridCell.Tab.0.bottom/0.0.1218.720@0.0.1218.720" timestamp="1602590937518" />
-    <state width="1175" height="176" key="GridCell.Tab.0.center" timestamp="1602590937517">
+    <state x="410" y="115" key="FileChooserDialogImpl/0.0.1218.720@0.0.1218.720" timestamp="1602656512450" />
+    <state width="1175" height="176" key="GridCell.Tab.0.bottom" timestamp="1602672058565">
       <screen x="0" y="0" width="1218" height="720" />
     </state>
-    <state width="1175" height="176" key="GridCell.Tab.0.center/0.0.1218.720@0.0.1218.720" timestamp="1602590937517" />
-    <state width="1175" height="176" key="GridCell.Tab.0.left" timestamp="1602590937517">
+    <state width="1175" height="176" key="GridCell.Tab.0.bottom/0.0.1218.720@0.0.1218.720" timestamp="1602672058565" />
+    <state width="1175" height="176" key="GridCell.Tab.0.center" timestamp="1602672058564">
       <screen x="0" y="0" width="1218" height="720" />
     </state>
-    <state width="1175" height="176" key="GridCell.Tab.0.left/0.0.1218.720@0.0.1218.720" timestamp="1602590937517" />
-    <state width="1175" height="176" key="GridCell.Tab.0.right" timestamp="1602590937517">
+    <state width="1175" height="176" key="GridCell.Tab.0.center/0.0.1218.720@0.0.1218.720" timestamp="1602672058564" />
+    <state width="1175" height="176" key="GridCell.Tab.0.left" timestamp="1602672058564">
       <screen x="0" y="0" width="1218" height="720" />
     </state>
-    <state width="1175" height="176" key="GridCell.Tab.0.right/0.0.1218.720@0.0.1218.720" timestamp="1602590937517" />
-    <state x="189" y="103" key="IDE.errors.dialog" timestamp="1602576531198">
+    <state width="1175" height="176" key="GridCell.Tab.0.left/0.0.1218.720@0.0.1218.720" timestamp="1602672058564" />
+    <state width="1175" height="176" key="GridCell.Tab.0.right" timestamp="1602672058564">
       <screen x="0" y="0" width="1218" height="720" />
     </state>
-    <state x="189" y="103" key="IDE.errors.dialog/0.0.1218.720@0.0.1218.720" timestamp="1602576531198" />
-    <state x="89" y="0" key="SettingsEditor" timestamp="1602576362121">
+    <state width="1175" height="176" key="GridCell.Tab.0.right/0.0.1218.720@0.0.1218.720" timestamp="1602672058564" />
+    <state x="189" y="103" key="IDE.errors.dialog" timestamp="1602670970028">
       <screen x="0" y="0" width="1218" height="720" />
     </state>
-    <state x="89" y="0" key="SettingsEditor/0.0.1218.720@0.0.1218.720" timestamp="1602576362121" />
-    <state x="425" y="138" key="chooseDestDirectoryDialog" timestamp="1602576768608">
+    <state x="189" y="103" key="IDE.errors.dialog/0.0.1218.720@0.0.1218.720" timestamp="1602670970028" />
+    <state x="110" y="0" key="SettingsEditor" timestamp="1602656616605">
       <screen x="0" y="0" width="1218" height="720" />
     </state>
-    <state x="425" y="138" key="chooseDestDirectoryDialog/0.0.1218.720@0.0.1218.720" timestamp="1602576768608" />
-    <state x="316" y="93" width="585" height="534" key="find.popup" timestamp="1602566482997">
-      <screen x="0" y="0" width="1218" height="720" />
-    </state>
-    <state x="316" y="93" width="585" height="534" key="find.popup/0.0.1218.720@0.0.1218.720" timestamp="1602566482997" />
-    <state x="272" y="41" width="672" height="678" key="search.everywhere.popup" timestamp="1602573805479">
-      <screen x="0" y="0" width="1218" height="720" />
-    </state>
-    <state x="272" y="41" width="672" height="678" key="search.everywhere.popup/0.0.1218.720@0.0.1218.720" timestamp="1602573805479" />
+    <state x="110" y="0" key="SettingsEditor/0.0.1218.720@0.0.1218.720" timestamp="1602656616605" />
   </component>
 </project>
