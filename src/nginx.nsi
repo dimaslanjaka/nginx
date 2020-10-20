@@ -1,8 +1,9 @@
 !define UninstId "Nginx" ; You might want to use a GUID here
 !include LogicLib.nsh
-!include "MUI2.nsh"
+!include MUI2.nsh
 !include x64.nsh
-
+!addincludedir "./EXT"
+!include "./EXT/EnvVarUpdate.nsh" #download http://nsis.sourceforge.net/mediawiki/images/a/ad/EnvVarUpdate.7z
 ;Request application privileges for Windows Vista
 RequestExecutionLevel admin
 
@@ -30,51 +31,9 @@ DirText "Setup will install $(^Name) in the following folder.$\r$\n$\r$\nTo inst
 ShowInstDetails show
 ShowUnInstDetails show
 
-;Get installation folder from registry if available
-;InstallDirRegKey HKCU "Software\Nginx" ""
-
-;Uninstall prevous version
-!macro UninstallExisting exitcode uninstcommand
-  Push `${uninstcommand}`
-  Call UninstallExisting
-  Pop ${exitcode}
-!macroend
-
-Function UninstallExisting
-  Exch $1 ; uninstcommand
-  Push $2 ; Uninstaller
-  Push $3 ; Len
-  StrCpy $3 ""
-  StrCpy $2 $1 1
-  StrCmp $2 '"' qloop sloop
-  sloop:
-    StrCpy $2 $1 1 $3
-    IntOp $3 $3 + 1
-    StrCmp $2 "" +2
-    StrCmp $2 ' ' 0 sloop
-    IntOp $3 $3 - 1
-    Goto run
-  qloop:
-    StrCmp $3 "" 0 +2
-    StrCpy $1 $1 "" 1 ; Remove initial quote
-    IntOp $3 $3 + 1
-    StrCpy $2 $1 1 $3
-    StrCmp $2 "" +2
-    StrCmp $2 '"' 0 qloop
-  run:
-    StrCpy $2 $1 $3 ; Path to uninstaller
-    StrCpy $1 161 ; ERROR_BAD_PATHNAME
-    GetFullPathName $3 "$2\.." ; $InstDir
-    IfFileExists "$2" 0 +4
-    ExecWait '"$2" /S _?=$3' $1 ; This assumes the existing uninstaller is a NSIS uninstaller, other uninstallers don't support /S nor _?=
-    IntCmp $1 0 "" +2 +2 ; Don't delete the installer if it was aborted
-    Delete "$2" ; Delete the uninstaller
-    RMDir "$3" ; Try to delete $InstDir
-    RMDir "$3\.." ; (Optional) Try to delete the parent of $InstDir
-  Pop $3
-  Pop $2
-  Exch $1 ; exitcode
-FunctionEnd
+;!define MUI_COMPONENTSPAGE_SMALLDESC ;No value
+;!define MUI_UI "nginx-service.exe" ;Value
+;!define MUI_INSTFILESPAGE_COLORS "FFFFFF 000000" ;Two colors
 
 ;--------------------------------
 ;Interface Settings
@@ -84,7 +43,7 @@ FunctionEnd
 ;Pages
 
   !insertmacro MUI_PAGE_WELCOME
-  !insertmacro MUI_PAGE_LICENSE "${NSISDIR}/Docs/Modern UI/License.txt"
+  !insertmacro MUI_PAGE_LICENSE "EXT/Docs/Modern UI/License.txt"
   !insertmacro MUI_PAGE_COMPONENTS
   !insertmacro MUI_PAGE_DIRECTORY
   !insertmacro MUI_PAGE_INSTFILES
@@ -92,7 +51,7 @@ FunctionEnd
 
   !insertmacro MUI_UNPAGE_WELCOME
   !insertmacro MUI_UNPAGE_CONFIRM
-  !insertmacro MUI_UNPAGE_LICENSE "${NSISDIR}/Docs/Modern UI/License.txt"
+  !insertmacro MUI_UNPAGE_LICENSE "EXT/Docs/Modern UI/License.txt"
   !insertmacro MUI_UNPAGE_COMPONENTS
   !insertmacro MUI_UNPAGE_DIRECTORY
   !insertmacro MUI_UNPAGE_INSTFILES
@@ -105,69 +64,7 @@ FunctionEnd
   !insertmacro MUI_LANGUAGE "French"
   !insertmacro MUI_LANGUAGE "German"
   !insertmacro MUI_LANGUAGE "Spanish"
-  !insertmacro MUI_LANGUAGE "SpanishInternational"
-  !insertmacro MUI_LANGUAGE "SimpChinese"
-  !insertmacro MUI_LANGUAGE "TradChinese"
-  !insertmacro MUI_LANGUAGE "Japanese"
-  !insertmacro MUI_LANGUAGE "Korean"
-  !insertmacro MUI_LANGUAGE "Italian"
-  !insertmacro MUI_LANGUAGE "Dutch"
-  !insertmacro MUI_LANGUAGE "Danish"
-  !insertmacro MUI_LANGUAGE "Swedish"
-  !insertmacro MUI_LANGUAGE "Norwegian"
-  !insertmacro MUI_LANGUAGE "NorwegianNynorsk"
-  !insertmacro MUI_LANGUAGE "Finnish"
-  !insertmacro MUI_LANGUAGE "Greek"
-  !insertmacro MUI_LANGUAGE "Russian"
-  !insertmacro MUI_LANGUAGE "Portuguese"
-  !insertmacro MUI_LANGUAGE "PortugueseBR"
-  !insertmacro MUI_LANGUAGE "Polish"
-  !insertmacro MUI_LANGUAGE "Ukrainian"
-  !insertmacro MUI_LANGUAGE "Czech"
-  !insertmacro MUI_LANGUAGE "Slovak"
-  !insertmacro MUI_LANGUAGE "Croatian"
-  !insertmacro MUI_LANGUAGE "Bulgarian"
-  !insertmacro MUI_LANGUAGE "Hungarian"
-  !insertmacro MUI_LANGUAGE "Thai"
-  !insertmacro MUI_LANGUAGE "Romanian"
-  !insertmacro MUI_LANGUAGE "Latvian"
-  !insertmacro MUI_LANGUAGE "Macedonian"
-  !insertmacro MUI_LANGUAGE "Estonian"
-  !insertmacro MUI_LANGUAGE "Turkish"
-  !insertmacro MUI_LANGUAGE "Lithuanian"
-  !insertmacro MUI_LANGUAGE "Slovenian"
-  !insertmacro MUI_LANGUAGE "Serbian"
-  !insertmacro MUI_LANGUAGE "SerbianLatin"
-  !insertmacro MUI_LANGUAGE "Arabic"
-  !insertmacro MUI_LANGUAGE "Farsi"
-  !insertmacro MUI_LANGUAGE "Hebrew"
   !insertmacro MUI_LANGUAGE "Indonesian"
-  !insertmacro MUI_LANGUAGE "Mongolian"
-  !insertmacro MUI_LANGUAGE "Luxembourgish"
-  !insertmacro MUI_LANGUAGE "Albanian"
-  !insertmacro MUI_LANGUAGE "Breton"
-  !insertmacro MUI_LANGUAGE "Belarusian"
-  !insertmacro MUI_LANGUAGE "Icelandic"
-  !insertmacro MUI_LANGUAGE "Malay"
-  !insertmacro MUI_LANGUAGE "Bosnian"
-  !insertmacro MUI_LANGUAGE "Kurdish"
-  !insertmacro MUI_LANGUAGE "Irish"
-  !insertmacro MUI_LANGUAGE "Uzbek"
-  !insertmacro MUI_LANGUAGE "Galician"
-  !insertmacro MUI_LANGUAGE "Afrikaans"
-  !insertmacro MUI_LANGUAGE "Catalan"
-  !insertmacro MUI_LANGUAGE "Esperanto"
-  !insertmacro MUI_LANGUAGE "Asturian"
-  !insertmacro MUI_LANGUAGE "Basque"
-  !insertmacro MUI_LANGUAGE "Pashto"
-  !insertmacro MUI_LANGUAGE "ScotsGaelic"
-  !insertmacro MUI_LANGUAGE "Georgian"
-  !insertmacro MUI_LANGUAGE "Vietnamese"
-  !insertmacro MUI_LANGUAGE "Welsh"
-  !insertmacro MUI_LANGUAGE "Armenian"
-  !insertmacro MUI_LANGUAGE "Corsican"
-  !insertmacro MUI_LANGUAGE "Tatar"
-  !insertmacro MUI_LANGUAGE "Hindi"
 
 ;--------------------------------
 ;Reserve Files
@@ -183,6 +80,9 @@ FunctionEnd
 Section "Nginx" SecInstallation
 
   SetOutPath "$INSTDIR"
+
+  ${EnvVarUpdate} $0 "PATH" "R" "HKLM" "$INSTDIR"  ; Remove path of old rev
+  ${EnvVarUpdate} $0 "PATH" "A" "HKLM" "$INSTDIR"  ; Append the new one
 
   ; Sect 01
   File "/oname=$InstDir\nginx-service.exe" "${__FILE__}" ; Dummy file
@@ -207,34 +107,6 @@ Section "Nginx" SecInstallation
   CreateDirectory $INSTDIR\temp
   CreateDirectory $INSTDIR\sites-enabled
 
-  ; Sect 03 : Add environtment variable
-  ; Check for write access
-  EnVar::Check "NULL" "NULL"
-  Pop $0
-  DetailPrint "EnVar::Check write access HKCU returned=|$0|"
-
-  ; Set to HKLM
-  EnVar::SetHKLM
-
-  ; Check for write access
-  EnVar::Check "NULL" "NULL"
-  Pop $0
-  DetailPrint "EnVar::Check write access HKLM returned=|$0|"
-
-  ; Set back to HKCU
-  EnVar::SetHKCU
-  DetailPrint "EnVar::SetHKCU"
-
-  ; Check for a 'temp' variable
-  EnVar::Check "temp" "NULL"
-  Pop $0
-  DetailPrint "EnVar::Check returned=|$0|"
-
-   ; Add a value
-  EnVar::AddValue "NGINX_HOME" $INSTDIR
-  Pop $0
-  DetailPrint "EnVar::AddValue returned=|$0|"
-
   ;Store installation folder
   WriteRegStr HKCU "Software\Nginx" "" $INSTDIR
 
@@ -256,20 +128,9 @@ Function .onInit
   ${EndIf}
 
   ; insert languages display
-  !define MUI_LANGDLL_ALWAYSSHOW
-  !define MUI_LANGDLL_ALLLANGUAGES
+  ;!define MUI_LANGDLL_ALWAYSSHOW
+  ;!define MUI_LANGDLL_ALLLANGUAGES
   !insertmacro MUI_LANGDLL_DISPLAY
-
-  ; remove previous installation
-  ReadRegStr $0 HKCU "Software\Software\Microsoft\Windows\CurrentVersion\Uninstall\${UninstId}" "UninstallString"
-  ${If} $0 != ""
-  ${AndIf} ${Cmd} `MessageBox MB_YESNO|MB_ICONQUESTION "Uninstall previous version?" /SD IDYES IDYES`
-    !insertmacro UninstallExisting $0 $0
-    ${If} $0 <> 0
-      MessageBox MB_YESNO|MB_ICONSTOP "Failed to uninstall, continue anyway?" /SD IDYES IDYES +2
-        Abort
-    ${EndIf}
-  ${EndIf}
 FunctionEnd
 
 ;--------------------------------
@@ -340,9 +201,7 @@ Section "Uninstall"
   DeleteRegKey /ifempty HKCU "Software\Nginx"
 
   # remove the variable
-  EnVar::Delete "NGINX_HOME"
-  Pop $0
-  DetailPrint "EnVar::Delete returned=|$0|"
+  ${un.EnvVarUpdate} $0 "PATH" "R" "HKLM" "$INSTDIR"      ; Remove path of latest rev
 
   SetAutoClose true
 SectionEnd
