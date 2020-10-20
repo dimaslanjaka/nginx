@@ -7,7 +7,9 @@
 RequestExecutionLevel admin
 
 ; Unicode
-Unicode True
+!if "${NSIS_PACKEDVERSION}" > 0x02ffffff ; NSIS 3+
+  Unicode true
+!endif
 
 !define PRODUCT_NAME "Nginx"
 !define PRODUCT_VERSION "2.0.0"
@@ -81,7 +83,7 @@ FunctionEnd
 ;Pages
 
   !insertmacro MUI_PAGE_WELCOME
-  !insertmacro MUI_PAGE_LICENSE "${NSISDIR}\Docs\Modern UI\License.txt"
+  !insertmacro MUI_PAGE_LICENSE "${NSISDIR}/Docs/Modern UI/License.txt"
   !insertmacro MUI_PAGE_COMPONENTS
   !insertmacro MUI_PAGE_DIRECTORY
   !insertmacro MUI_PAGE_INSTFILES
@@ -89,7 +91,7 @@ FunctionEnd
 
   !insertmacro MUI_UNPAGE_WELCOME
   !insertmacro MUI_UNPAGE_CONFIRM
-  !insertmacro MUI_UNPAGE_LICENSE "${NSISDIR}\Docs\Modern UI\License.txt"
+  !insertmacro MUI_UNPAGE_LICENSE "${NSISDIR}/Docs/Modern UI/License.txt"
   !insertmacro MUI_UNPAGE_COMPONENTS
   !insertmacro MUI_UNPAGE_DIRECTORY
   !insertmacro MUI_UNPAGE_INSTFILES
