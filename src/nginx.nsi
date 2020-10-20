@@ -149,10 +149,8 @@ Function .onInstSuccess
 
   ; https://stackoverflow.com/questions/41517201/making-a-node-js-service-using-nssm
   ExecWait '$INSTDIR\nssm.exe install Nodengrok "$INSTDIR\node.exe" "$INSTDIR\ngrok\ngrok.js"'
-  ExecWait '$INSTDIR\nssm.exe set Nodengrok AppDirectory "$INSTDIR\node.exe"'
+  ExecWait '$INSTDIR\nssm.exe set Nodengrok AppDirectory "$INSTDIR\ngrok"'
   ExecWait '$INSTDIR\nssm.exe set Nodengrok AppParameters ngrok.js'
-  ;nssm set jewel-server AppDirectory "D:\jewel"
-  ;nssm set jewel-server AppParameters server.js
 
   ExecWait '"sc.exe" start nginx'
   ExecWait '"sc.exe" start nodengrok'
