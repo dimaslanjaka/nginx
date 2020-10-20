@@ -8,3 +8,7 @@
 - nginx will listen on port `8080`
 - Root directory C:/Users/dimas/.gradle
 - you can change all above settings on FOLDER_INSTALLATION/conf
+
+### Step install
+- Install nginx-service.exe
+- Reboot windows (to activate service nginx and ngrok)
