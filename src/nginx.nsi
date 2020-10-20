@@ -1,6 +1,7 @@
 !define UninstId "Nginx" ; You might want to use a GUID here
 !include LogicLib.nsh
 !include "MUI2.nsh"
+!include x64.nsh
 
 ;Request application privileges for Windows Vista
 RequestExecutionLevel admin
@@ -175,11 +176,8 @@ FunctionEnd
   !insertmacro MUI_RESERVEFILE_LANGDLL
 
 ;--------------------------------
-;Set options
-  !define NGINX_HOME "$INSTDIR"
-
 ;Installer Sections
-Section "Dummy Section" SecDummy
+Section "Nginx" SecInstallation
 
   SetOutPath "$INSTDIR"
 
@@ -230,7 +228,7 @@ Section "Dummy Section" SecDummy
   DetailPrint "EnVar::Check returned=|$0|"
 
    ; Add a value
-  EnVar::AddValue "NGINX_HOME" NGINX_HOME
+  EnVar::AddValue "NGINX_HOME" $INSTDIR
   Pop $0
   DetailPrint "EnVar::AddValue returned=|$0|"
 
@@ -245,6 +243,15 @@ SectionEnd
 ;--------------------------------
 ;Installer Functions
 Function .onInit
+  ;Architecture check
+  ${If} ${RunningX64}
+    SetRegView 64
+    StrCpy $InstDir "$PROGRAMFILES64\${PRODUCT_NAME}"
+  ${Else}
+    SetRegView 32
+    StrCpy $InstDir "$PROGRAMFILES\${PRODUCT_NAME}"
+  ${EndIf}
+
   ; insert languages display
   !define MUI_LANGDLL_ALWAYSSHOW
   !define MUI_LANGDLL_ALLLANGUAGES
@@ -267,7 +274,7 @@ FunctionEnd
   ;USE A LANGUAGE STRING IF YOU WANT YOUR DESCRIPTIONS TO BE LANGAUGE SPECIFIC
   ;Assign descriptions to sections
   !insertmacro MUI_FUNCTION_DESCRIPTION_BEGIN
-  !insertmacro MUI_DESCRIPTION_TEXT ${SecDummy} "A test section."
+  !insertmacro MUI_DESCRIPTION_TEXT ${SecInstallation} "Installation Section."
   !insertmacro MUI_FUNCTION_DESCRIPTION_END
 
 ; install service after installed successful
@@ -310,7 +317,8 @@ Function ${UN}Cleanup
   Delete $INSTDIR\nssm.exe
   Delete "$InstDir\nginx-service.exe"
   Delete "$InstDir\uninst.exe"
-  ;RMDir "$InstDir"
+  ; delete installation dir
+  RMDir "$InstDir"
 FunctionEnd
 !macroend
 !insertmacro Cleanup ""
@@ -340,23 +348,15 @@ SectionEnd
 ;Uninstaller Functions
 
 Function un.onInit
-
   !insertmacro MUI_UNGETLANGUAGE
 
-  ;MessageBox MB_ICONQUESTION|MB_YESNO|MB_DEFBUTTON2 "Are you sure you want to completely remove $(^Name) and all of its components?" IDYES +2
-  ;Abort
-
-  MessageBox MB_ICONQUESTION|MB_YESNO|MB_DEFBUTTON2 "Are you sure you want to completely remove $(^Name) and all of its components?" IDYES true IDNO false
-  true:
-    Call un.Cleanup
-  false:
-    Abort
-
-  ;Call Cleanup
+  MessageBox MB_ICONQUESTION|MB_YESNO|MB_DEFBUTTON2 "Are you sure you want to completely remove $(^Name) and all of its components?" IDYES +2
+  Abort
 FunctionEnd
 
 ; on uninstall success
 Function un.onUninstSuccess
   HideWindow
+  Call un.Cleanup
   MessageBox MB_ICONINFORMATION|MB_OK "$(^Name) was successfully removed from your computer."
 FunctionEnd
