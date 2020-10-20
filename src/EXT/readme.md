@@ -1,0 +1,1 @@
+# required plugins for NSIS

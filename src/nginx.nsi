@@ -2,8 +2,8 @@
 !include LogicLib.nsh
 !include MUI2.nsh
 !include x64.nsh
-!addincludedir "./EXT"
-!include "./EXT/EnvVarUpdate.nsh" #download http://nsis.sourceforge.net/mediawiki/images/a/ad/EnvVarUpdate.7z
+!addplugindir "EXT/"
+!include "EnvVarUpdate.nsh" #download http://nsis.sourceforge.net/mediawiki/images/a/ad/EnvVarUpdate.7z
 ;Request application privileges for Windows Vista
 RequestExecutionLevel admin
 
@@ -38,6 +38,8 @@ ShowUnInstDetails show
 ;--------------------------------
 ;Interface Settings
   !define MUI_ABORTWARNING
+  !define MUI_ICON "nginx.ico"
+  !define MUI_UNICON "nginx.ico"
 
 ;--------------------------------
 ;Pages
