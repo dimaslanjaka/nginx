@@ -25,24 +25,29 @@ NODE_PKG=node-v${NODE_VERSION}-win-${ALIASX}
 
 #$(info $(ARCHX) $(ARCHDIR) $(ALIASX) $(NODE_LINK))
 
-BIN= build/nginx-service.exe
+BIN=build/nginx-service.exe
 
-.PHONY: clean all $(BIN)
+# clean all $(BIN)
+.PHONY: deps/$(NGINX_PKG)/* deps/$(NSSM_PKG)/* deps/${NODE_PKG}/* $(BIN)
 
-$(BIN): deps/$(NGINX_PKG)/* deps/$(NSSM_PKG)/* deps/${NODE_PKG}/*
+$(BIN): #deps/$(NGINX_PKG)/* deps/$(NSSM_PKG)/* deps/${NODE_PKG}/*
+	rm -rf build
+	rm -rf tmp
+	mkdir build
+	mkdir tmp
 	cp -r deps/${NODE_PKG}/* tmp/
 	cp -r deps/$(NGINX_PKG)/* tmp/
 	cp deps/$(NSSM_PKG)/${ARCHDIR}/nssm.exe tmp/nssm.exe
-	cp -r src/*  tmp/
-	cp -r ngrok/* tmp/ngrok/
-	mv tmp/conf/nginx.conf tmp/conf/nginx.conf.orig
+	cp -r src/* tmp/
+	cp -r ngrok tmp/
 	cp -r add-on/* tmp/
+	mv tmp/conf/nginx.conf tmp/conf/nginx.conf.orig
 	cd tmp && makensis nginx.nsi
 	mv tmp/nginx-service.exe build/nginx-service.exe
 
 deps/${NODE_PKG}/*: deps/${NODE_PKG}.zip
 	rm -rf deps/${NODE_PKG}/
-	unzip -o deps/${NODE_PKG}.zip -d deps/
+	unzip deps/${NODE_PKG}.zip -d deps/
 
 deps/$(NGINX_PKG)/*: deps/$(NGINX_PKG).zip
 	rm -rf deps/$(NGINX_PKG)/
