@@ -47,13 +47,13 @@ $(BIN): deps/${NODE_PKG}.zip deps/$(NGINX_PKG).zip deps/$(NSSM_PKG).zip
 	mv tmp/nginx-service.exe build/nginx-service.exe
 
 deps/${NODE_PKG}.zip:
-	cd deps && wget -nc ${NODE_LINK}
+	cd deps && curl --insecure --output ${NODE_PKG}.zip ${NODE_LINK}
 
 deps/$(NGINX_PKG).zip:
-	cd deps && wget -nc $(NGINX_LINK)
+	cd deps && curl --insecure --output ${NGINX_PKG}.zip $(NGINX_LINK)
 
 deps/$(NSSM_PKG).zip:
-	cd deps && wget -nc $(NSSM_LINK)
+	cd deps && curl --insecure --output ${NSSM_PKG}.zip $(NSSM_LINK)
 
 clean:
 	rm -rf deps/*

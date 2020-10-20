@@ -35,10 +35,11 @@ ShowUnInstDetails show
 
 ;Uninstall prevous version
 !macro UninstallExisting exitcode uninstcommand
-Push `${uninstcommand}`
-Call UninstallExisting
-Pop ${exitcode}
+  Push `${uninstcommand}`
+  Call UninstallExisting
+  Pop ${exitcode}
 !macroend
+
 Function UninstallExisting
   Exch $1 ; uninstcommand
   Push $2 ; Uninstaller
