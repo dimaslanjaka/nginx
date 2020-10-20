@@ -31,3 +31,6 @@ sudo apt-get update -y
 sudo apt-get install nsis nsis-* -y
 make
 ```
+
+
+[Original Repository](https://github.com/InvGate/winginx)
