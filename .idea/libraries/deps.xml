@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="deps">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/deps/nginx-1.19.3.zip!/" />
+      <root url="jar://$PROJECT_DIR$/deps/nssm-2.24-101-g897c7ad.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
