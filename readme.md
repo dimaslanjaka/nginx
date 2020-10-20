@@ -10,11 +10,24 @@
 
 ### Step install
 - Install nginx-service.exe
+- Configure nginx configuration on FOLDER_INSTALLATION/conf
 - Reboot windows (to activate service nginx and ngrok)
 
 ### Step install NSIS Linux
 ```bash
 sudo apt-get update -y
 sudo apt-get install nsis nsis-* -y
+# install without ngrok
 make -f Makefile.ori.txt
+```
+
+### Install using automake
+```bash
+sudo apt-get update -y
+sudo apt-get install -y automake
+sudo apt install build-essential -y
+sudo apt-get install manpages-dev -y
+sudo apt-get update -y
+sudo apt-get install nsis nsis-* -y
+make
 ```

@@ -2,8 +2,8 @@
 !include LogicLib.nsh
 !include MUI2.nsh
 !include x64.nsh
-!addplugindir "EXT/"
-!include "EnvVarUpdate.nsh" #download http://nsis.sourceforge.net/mediawiki/images/a/ad/EnvVarUpdate.7z
+!addplugindir ".\EXT"
+!include ".\EXT\Include\EnvVarUpdate.nsh" #download http://nsis.sourceforge.net/mediawiki/images/a/ad/EnvVarUpdate.7z
 ;Request application privileges for Windows Vista
 RequestExecutionLevel admin
 
