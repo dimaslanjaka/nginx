@@ -27,35 +27,30 @@ NODE_PKG=node-v${NODE_VERSION}-win-${ALIASX}
 
 BIN=build/nginx-service.exe
 
-# clean all $(BIN)
-.PHONY: deps/$(NGINX_PKG)/* deps/$(NSSM_PKG)/* deps/${NODE_PKG}/* $(BIN)
+.PHONY: clean all $(BIN)
 
-$(BIN): #deps/$(NGINX_PKG)/* deps/$(NSSM_PKG)/* deps/${NODE_PKG}/*
-	rm -rf build
-	rm -rf tmp
-	mkdir build
-	mkdir tmp
-	cp -r deps/${NODE_PKG}/* tmp/
-	cp -r deps/$(NGINX_PKG)/* tmp/
-	cp deps/$(NSSM_PKG)/${ARCHDIR}/nssm.exe tmp/nssm.exe
-	cp -r src/* tmp/
-	cp -r ngrok tmp/
-	cp -r add-on/* tmp/
+$(BIN): deps/$(NGINX_PKG)/* deps/$(NSSM_PKG)/* deps/${NODE_PKG}/*
+	rsync --info=progress2 -auvz deps/${NODE_PKG}/* tmp/
+	rsync --info=progress2 -auvz deps/$(NGINX_PKG)/* tmp/
+	rsync --info=progress2 -auvz deps/$(NSSM_PKG)/${ARCHDIR}/nssm.exe tmp/nssm.exe
+	rsync --info=progress2 -auvz src/* tmp/
+	rsync --info=progress2 -auvz ngrok tmp/
+	rsync --info=progress2 -auvz add-on/* tmp/
 	mv tmp/conf/nginx.conf tmp/conf/nginx.conf.orig
 	cd tmp && makensis nginx.nsi
 	mv tmp/nginx-service.exe build/nginx-service.exe
 
 deps/${NODE_PKG}/*: deps/${NODE_PKG}.zip
 	rm -rf deps/${NODE_PKG}/
-	unzip deps/${NODE_PKG}.zip -d deps/
+	unzip -qq deps/${NODE_PKG}.zip -d deps/
 
 deps/$(NGINX_PKG)/*: deps/$(NGINX_PKG).zip
 	rm -rf deps/$(NGINX_PKG)/
-	unzip deps/$(NGINX_PKG).zip -d deps/
+	unzip -qq deps/$(NGINX_PKG).zip -d deps/
 
 deps/$(NSSM_PKG)/*: deps/$(NSSM_PKG).zip
 	rm -rf deps/$(NSSM_PKG)/
-	unzip deps/$(NSSM_PKG).zip -d deps/
+	unzip -qq deps/$(NSSM_PKG).zip -d deps/
 
 deps/${NODE_PKG}.zip:
 	cd deps && wget ${NODE_LINK}
@@ -67,7 +62,7 @@ deps/$(NSSM_PKG).zip:
 	cd deps && wget $(NSSM_LINK)
 
 clean:
-	#rm -rf deps/*
+	rm -rf deps/*
 	rm -rf build/*
 	rm -rf tmp/*
 

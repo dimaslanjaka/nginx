@@ -11,36 +11,8 @@
 
 Name "${PRODUCT_NAME}" ; ${PRODUCT_VERSION}"
 OutFile "nginx-service.exe"
-
-; Load Languages
 LoadLanguageFile "${NSISDIR}\Contrib\Language files\English.nlf"
 LoadLanguageFile "${NSISDIR}\Contrib\Language files\Spanish.nlf"
-LoadLanguageFile "${NSISDIR}\Contrib\Language files\Czech.nlf"
-LoadLanguageFile "${NSISDIR}\Contrib\Language files\Dutch.nlf"
-LoadLanguageFile "${NSISDIR}\Contrib\Language files\French.nlf"
-LoadLanguageFile "${NSISDIR}\Contrib\Language files\German.nlf"
-LoadLanguageFile "${NSISDIR}\Contrib\Language files\Korean.nlf"
-LoadLanguageFile "${NSISDIR}\Contrib\Language files\Russian.nlf"
-LoadLanguageFile "${NSISDIR}\Contrib\Language files\Swedish.nlf"
-LoadLanguageFile "${NSISDIR}\Contrib\Language files\TradChinese.nlf"
-LoadLanguageFile "${NSISDIR}\Contrib\Language files\SimpChinese.nlf"
-LoadLanguageFile "${NSISDIR}\Contrib\Language files\Slovak.nlf"
-;LoadLanguageFile "${NSISDIR}\Contrib\Language files\Indonesia.nlf"
-
-; Set name using the normal interface (Name command)
-LangString Name ${LANG_ENGLISH} "English"
-LangString Name ${LANG_CZECH} "Czech"
-LangString Name ${LANG_DUTCH} "Dutch"
-LangString Name ${LANG_FRENCH} "French"
-LangString Name ${LANG_GERMAN} "German"
-LangString Name ${LANG_KOREAN} "Korean"
-LangString Name ${LANG_RUSSIAN} "Russian"
-LangString Name ${LANG_SPANISH} "Spanish"
-LangString Name ${LANG_SWEDISH} "Swedish"
-LangString Name ${LANG_TRADCHINESE} "Traditional Chinese"
-LangString Name ${LANG_SIMPCHINESE} "Simplified Chinese"
-LangString Name ${LANG_SLOVAK} "Slovak"
-
 InstallDir "$PROGRAMFILES\Nginx"
 Icon "nginx.ico"
 UninstallIcon "${NSISDIR}\Contrib\Graphics\Icons\nsis1-uninstall.ico"
@@ -63,8 +35,6 @@ Section "Nginx" SEC01
   File /r docs
   File /r html
   File /r "sites-available"
-  File /r "node_modules"
-  File "node.exe"
   CreateDirectory $INSTDIR\logs
   CreateDirectory $INSTDIR\temp
   CreateDirectory $INSTDIR\sites-enabled
@@ -72,13 +42,9 @@ SectionEnd
 
 Section -Post
   ExecWait '$INSTDIR\nssm.exe install Nginx "$INSTDIR\nginx.exe"'
-  ExecWait '$INSTDIR\nssm.exe install Nodengrok "$INSTDIR\node.exe" "$INSTDIR\ngrok\ngrok.js"'
   ExecWait '"sc.exe" start nginx'
-  ExecWait '"sc.exe" start nodengrok'
   WriteRegStr HKLM "SYSTEM\CurrentControlSet\Services\nginx" \
                      "Description" "Nginx HTTP and reverse proxy server"
-  WriteRegStr HKLM "SYSTEM\CurrentControlSet\Services\nodengrok" \
-                     "Description" "Deploy nginx with ngrok"
   WriteUninstaller "$INSTDIR\uninst.exe"
   WriteRegStr HKLM "${PRODUCT_DIR_REGKEY}" "" "$INSTDIR\nssm.exe"
   WriteRegStr ${PRODUCT_UNINST_ROOT_KEY} "${PRODUCT_UNINST_KEY}" "DisplayName" "$(^Name)"
@@ -108,8 +74,6 @@ Section Uninstall
   RMDir /r "$INSTDIR\html"
   RMDir /r "$INSTDIR\docs"
   RMDir /r "$INSTDIR\temp"
-  RMDir /r "$INSTDIR\node_modules"
-  Delete $INSTDIR\node.exe
   Delete $INSTDIR\nginx.exe
   Delete $INSTDIR\nssm.exe
 
